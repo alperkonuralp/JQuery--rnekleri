@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Hesap Makinası</title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        #tCalc
+        {
+        }
+        #tCalc input
+        {
+            width: 25px;
+        }
+        #tCalc #tbView
+        {
+            width: 100px;
+            text-align: right;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function RakamYaz(o) {
+            var d = o.value;
+            var e = $("#tbView").val();
+            e += d;
+            $("#tbView").val(e);
+        }
+
+        function RakamSil() {
+            var e = $("#tbView").val();
+            e = e.substring(0, e.length - 1);
+            $("#tbView").val(e);
+        }
+
+        function RakamTemizle() {
+            $("#tbView").val('');
+        }
+
+        function RakamIslem(islem) {
+            window.sayi = parseFloat($("#tbView").val());
+            if (isNaN(window.sayi)) {
+                window.sayi = 0; 
+            }
+            window.islem = islem;
+            $("#tbView").val('');
+        }
+
+        function SonucHesapla() {
+            if (!window.sayi) return;
+            var is = parseFloat($("#tbView").val());
+            switch (window.islem) {
+                case '+':
+                    is += window.sayi;
+                    break;
+                case '-':
+                    is = window.sayi - is;
+                    break;
+                case '*':
+                    is *= window.sayi;
+                    break;
+                case '/':
+                    is = window.sayi / is;
+                    break;
+                case '%':
+                    is = window.sayi % is;
+                    break;
+            }
+            window.sayi = null;
+            window.islem = null;
+            $("#tbView").val(is);
+        }
+
+        function Temizle() {
+            window.sayi = null;
+            window.islem = null;
+            $("#tbView").val("");
+        }
+
+        function topla(a, b) {
+            return a + b;
+        }
+
+        var c = topla(1, 2);
+    </script>
+
+</head>
+<body>
+    <table id="tCalc">
+        <tr>
+            <td colspan="4" align="center">
+                <input type="text" id="tbView" />
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <input type="button" value="C" onclick="Temizle()" />
+            </td>
+            <td align="center">
+                <input type="button" value="CE" onclick="RakamTemizle();" />
+            </td>
+            <td align="center">
+                <input type="button" value="Sil" onclick="RakamSil();" />
+            </td>
+            <td align="center">
+                <input type="button" value="/" onclick="RakamIslem(this.value);" />
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <input type="button" value="1" onclick="RakamYaz(this);" />
+            </td>
+            <td align="center">
+                <input type="button" value="2" onclick="RakamYaz(this);" />
+            </td>
+            <td align="center">
+                <input type="button" value="3" onclick="RakamYaz(this);" />
+            </td>
+            <td align="center">
+                <input type="button" value="*" onclick="RakamIslem(this.value);"/>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <input type="button" value="4" onclick="RakamYaz(this);" />
+            </td>
+            <td align="center">
+                <input type="button" value="5" onclick="RakamYaz(this);" />
+            </td>
+            <td align="center">
+                <input type="button" value="6" onclick="RakamYaz(this);" />
+            </td>
+            <td align="center">
+                <input type="button" value="-" onclick="RakamIslem(this.value);"/>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <input type="button" value="7" onclick="RakamYaz(this);" />
+            </td>
+            <td align="center">
+                <input type="button" value="8" onclick="RakamYaz(this);" />
+            </td>
+            <td align="center">
+                <input type="button" value="9" onclick="RakamYaz(this);" />
+            </td>
+            <td align="center">
+                <input type="button" value="+" onclick="RakamIslem(this.value);"/>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <input type="button" value="." onclick="RakamYaz(this);" />
+            </td>
+            <td align="center">
+                <input type="button" value="0" onclick="RakamYaz(this);" />
+            </td>
+            <td align="center">
+                <input type="button" value="%" onclick="RakamIslem(this.value);"/>
+            </td>
+            <td align="center">
+                <input type="button" value="=" onclick="SonucHesapla();" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

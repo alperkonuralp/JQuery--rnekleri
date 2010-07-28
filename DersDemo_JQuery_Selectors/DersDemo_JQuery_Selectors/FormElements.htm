@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function IslemYap() {
+            // Okuma
+            //var s1d = document.getElementById("s1").value;
+            var s1d = $("#s1").val();
+            //var s2d = document.getElementById("s2").value;
+            var s2d = $("#s2").val();
+
+            //document.getElementById("s3").value = s1d + s2d;
+            $("#s3").val(s1d + s2d);
+        }
+
+        function IslemYap2() {
+            // Okuma
+            //var s1d = document.getElementById("s1").value;
+            var s1d = $("#s1").val();
+            //var s2d = document.getElementById("s2").value;
+            var s2d = $("#s2").val();
+
+            //document.getElementById("s4").innerHTML = s1d + s2d;
+            $("#s4").html(s1d + s2d);
+        }
+    </script>
+
+</head>
+<body>
+    <form>
+    <input type="text" id="s1" name="s1" />
+    +
+    <input type="text" id="s2" name="s2" />
+    <input type="button" value=" = " onclick="IslemYap();" />
+    <input type="text" id="s3" name="s3" />
+    <br />
+    <input type="button" value=" = " onclick="IslemYap2()" />
+    <span id="s4"></span>
+    <br />
+    <input type="text" id="s5" name="s5" value="0" />
+    <input type="button" id="b1" name="b1" value="Arttır" />
+    <input type="button" id="b2" name="b2" value="Azalt" />
+    <br />
+    <select id="islem" name="islem">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select>
+    </form>
+</body>
+</html>

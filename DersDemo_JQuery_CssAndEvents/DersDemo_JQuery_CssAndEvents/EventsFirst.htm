@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        //$(document).ready(function(){
+        $(function() {
+            /*$("#aGoogle").mouseover(function() {
+            $("#dGoogleImage").show(500);
+            })
+            .mouseout(function() {
+            $("#dGoogleImage").hide(500);
+            });*/
+
+            $("#aGoogle").hover(function() {
+                $("#dGoogleImage").show(500);
+            }, function() {
+                $("#dGoogleImage").hide(500);
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <a id="aGoogle" href="http://www.google.com">Google</a>
+    <div id="dGoogleImage" style="display: none; background: #dddddd; padding: 5px; width: 100px;
+        height: 55">
+        <img src="www.google.com.tr.png" width="100" alt="" /></div>
+</body>
+</html>

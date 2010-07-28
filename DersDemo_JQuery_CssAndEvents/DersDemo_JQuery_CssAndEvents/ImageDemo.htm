@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        #dGallery img
+        {
+            display: none;
+        }
+        #dGallery2
+        {
+            width: 97px;
+            height: 92px;
+            overflow: hidden;
+        }
+        #dGallery2 img
+        {
+            float: left;
+        }
+        #dGallery2 #dGallery2Inner
+        {
+            width: 400px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#dGallery img:first-child").show();
+            $("#dGallery img").click(function() {
+                var sonra = $(this).next();
+                if (sonra.length == 0) sonra = $("#dGallery img:first-child");
+                $(this).hide(); //.appendTo("#dGallery");
+                sonra.show();
+
+            });
+
+            $("#bPrev").click(function() {
+                var ml = parseInt($("#dGallery2 #dGallery2Inner").css("marginLeft"));
+                if (isNaN(ml)) ml = 0;
+
+                ml += 10;
+
+                $("#dGallery2 #dGallery2Inner").css("marginLeft", ml);
+            });
+
+            $("#bNext").click(function() {
+                var ml = parseInt($("#dGallery2 #dGallery2Inner").css("marginLeft"));
+                if (isNaN(ml)) ml = 0;
+
+                ml -= 10;
+
+                $("#dGallery2 #dGallery2Inner").css("marginLeft", ml);
+            });
+            var td = $("td");
+            var div = $("div");
+        });
+    </script>
+
+</head>
+<body>
+    <div id="dGallery">
+        <img src="a01.jpg" /><img src="a02.jpg" />
+        <img src="a03.png" /><img src="a04.png" />
+    </div>
+    <input id="bPrev" type="button" value="<<<" />
+    <input id="bNext" type="button" value=">>>" />
+    <div id="dGallery2">
+        <div id="dGallery2Inner">
+            <img src="a01.jpg" /><img src="a02.jpg" />
+            <img src="a03.png" /><img src="a04.png" />
+        </div>
+    </div>
+</body>
+</html>

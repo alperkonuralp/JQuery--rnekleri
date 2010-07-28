@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function islemm() {
+            var s1d = parseInt($("#s1").val());
+            var s2d = parseInt($("#s2").val());
+
+            //document.getElementById("islem");
+            //$("#islem").get(0)
+            //alert($("#islem").val());
+            /*switch ($("#islem").val()) {
+                case '+':
+                    $("#s3").val(s1d + s2d);
+                    break;
+                case '-':
+                    $("#s3").val(s1d - s2d);
+                    break;
+                case '*':
+                    $("#s3").val(s1d * s2d);
+                    break;
+                case '/':
+                    $("#s3").val(s1d / s2d);
+                    break;
+                case '%':
+                    $("#s3").val(s1d % s2d);
+                    break;
+            }*/
+
+            switch ($("#islem").get(0).selectedIndex) {
+                case 0:
+                    $("#s3").val(s1d + s2d);
+                    break;
+                case 1:
+                    $("#s3").val(s1d - s2d);
+                    break;
+                case 2:
+                    $("#s3").val(s1d * s2d);
+                    break;
+                case 3:
+                    $("#s3").val(s1d / s2d);
+                    break;
+                case 4:
+                    $("#s3").val(s1d % s2d);
+                    break;
+            }
+        }
+    
+    </script>
+
+</head>
+<body>
+    <form>
+    <input type="text" id="s1" name="s1" />
+    <select id="islem" name="islem">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="text" id="s2" name="s2" />
+    <input type="button" id="hesapla" name="hesapla" value=" = " onclick="islemm()" />
+    <input type="text" id="s3" name="s3" />
+    </form>
+</body>
+</html>

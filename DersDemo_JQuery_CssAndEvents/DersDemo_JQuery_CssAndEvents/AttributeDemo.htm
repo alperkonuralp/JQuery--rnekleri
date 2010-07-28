@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        #tData
+        {
+            background: #eeeeee;
+        }
+    </style>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#tData tr td:first-child").attr("align", "right")
+                .css("color", "red");
+
+            $('#tData tr td:nth-child(2)')
+                .attr({ align: 'center', width: 20 });
+
+            $('#tData tr td:nth-child(3)')
+                .attr({ align: 'left'});
+
+            $('body').append('background: ' +
+                $('#tData').css('background'));
+            $(document.body).append('<br/>align: ' +
+                $('#tData tr td:eq(0)').attr('align'));
+        });
+    </script>
+
+</head>
+<body>
+    <table id="tData" style="background: #dddddd; color: Blue;">
+        <tr>
+            <td>
+                Kullanıcı Adı
+            </td>
+            <td>
+                :
+            </td>
+            <td>
+                <input type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Şifre
+            </td>
+            <td>
+                :
+            </td>
+            <td>
+                <input type="password" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                İl
+            </td>
+            <td>
+                :
+            </td>
+            <td>
+                <input type="text" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        #dMenu
+        {
+            width: 600px;
+            height: 25px;
+            background: #eeeeee url(menuback.png) no-repeat scroll left top;
+            margin: 0 auto;
+        }
+        #dMenu .cMenuItem
+        {
+            width: 150px;
+            height: 22px;
+            text-align: center;
+            display: block;
+            float: left;
+            text-decoration: none;
+            padding-top: 3px;
+        }
+        /*#dMenu .cMenuItem:hover
+        {
+            background-image:url(menuback.png);
+        }*/</style>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#dMenu").mousemove(function(evt) {
+
+                var of = $("#dMenu").offset(); // left, top
+                $("#dMenu").css("backgroundPosition",
+                    (evt.pageX - of.left - 75) + "px top");
+            });
+
+            $("#bKac")
+            .mouseover(function() {
+                var l = Math.round(($(document).width() - $("#bKac").width()) * Math.random());
+                var t = Math.round(($(document).height() - $("#bKac").height()) * Math.random());
+                $("#bKac").css({ left: l, top: t });
+            })
+            .click(function() { alert("Beni yakaldın aferim."); });
+        });
+    </script>
+
+</head>
+<body>
+    <div id="dMenu">
+        <a class="cMenuItem" href="#">Ana Sayfa</a> <a class="cMenuItem" href="#">Ürünler</a>
+        <a class="cMenuItem" href="#">Hakkımızda</a> <a class="cMenuItem" href="#">İletişim</a>
+    </div>
+    <input id="bKac" type="button" value="Beni Yakalayamazsın" style="position: absolute; width: 150px; height: 25px;" />
+</body>
+</html>

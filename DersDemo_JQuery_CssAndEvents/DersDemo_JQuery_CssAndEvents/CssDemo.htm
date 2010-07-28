@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            var d = new Date(2010, 6, 28, 23, 14);
+
+            //$("#dGiris").html(d.toTimeString());
+            if ((d.getHours() >= 3 && d.getMinutes() >= 0) &&
+                (d.getHours() <= 11 && d.getMinutes() <= 59)) {
+                $("#dGiris").html("Günaydın")
+                    .css({ background: 'orange', color: 'white' });
+            }
+            //var dd = '' + d.getHours() + ':' + d.getMinutes();
+            var dd = d.toTimeString().substring(0, 5);
+            if (dd >= '03:00' && dd <= '11:59') {
+                $("#dGiris").html(d.toTimeString().substring(0, 8) + " Günaydın")
+                    .css({ background: 'orange', color: 'white' });
+            }
+            else if (dd >= '12:00' && dd <= '16:30') {
+                $("#dGiris").html(d.toTimeString().substring(0, 8) + " Tünaydın")
+                    .css({ background: 'yellow', color: 'black' });
+            }
+            else if (dd >= '16:31' && dd <= '22:30') {
+                $("#dGiris").html(d.toTimeString().substring(0, 8) + " İyi Akşamlar")
+                    .css({ background: 'blue', color: 'white' });
+            }
+            else {
+                $("#dGiris").html(d.toTimeString().substring(0, 8) + " İyi Geceler")
+                    .css({ background: 'black', color: 'white' });
+            }
+        });
+    </script>
+
+</head>
+<body>
+    <div id="dGiris">
+    </div>
+    <!-- saat : 03:00 - 11:59 : Günaydın renk: turucu üzerine beyaz -->
+    <!-- saat : 12:00 - 16:30 : Tünaydın renk: sarı üzerine siyah -->
+    <!-- saat : 16:31 - 22:30 : İyi Akşamlar renk: mavi üzerine beyaz -->
+    <!-- saat : 22:31 - 02:59 : İyi Geceler renk: siyah üzerine beyaz -->
+</body>
+</html>

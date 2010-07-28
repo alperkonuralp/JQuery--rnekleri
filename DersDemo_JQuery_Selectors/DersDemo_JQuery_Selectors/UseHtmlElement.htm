@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var a = 0;
+        function basaEkle() {
+            /*var ic = $("#d1").html();
+            //ic += "Merhaba Dünya<br/>";
+            ic = "Merhaba Dünya<br/>" + ic;
+            $("#d1").html(ic);*/
+
+            //$("#d1").html("Merhaba Dünya" + a + "<br/>" + $("#d1").html());
+
+            //Sona ekleme
+            //$("#d1").append("Merhaba Dünya " + a + "<br/>");
+
+            // Başa Ekle
+            $("#d1").prepend("Merhaba Dünya " + a + "<br/>");
+            a++;
+        }
+        function sonaEkle() {
+            /*var ic = $("#d1").html();
+            //ic += "Merhaba Dünya<br/>";
+            ic = "Merhaba Dünya<br/>" + ic;
+            $("#d1").html(ic);*/
+
+            //$("#d1").html("Merhaba Dünya" + a + "<br/>" + $("#d1").html());
+
+            //Sona ekleme
+            //$("#d1").append("Merhaba Dünya " + a + "<br/>");
+
+            // Başa Ekle
+            $("#d1").append("Merhaba Dünya " + a + "<br/>");
+            a++;
+        }
+        function solaEkle() {
+            $("#d1").before("&lt;");
+        }
+        function sagaEkle() {
+            $("#d1").after("&gt;");
+        }
+    </script>
+
+</head>
+<body>
+    <a href="#" onclick="basaEkle()">Başa Ekle</a> | <a href="#" onclick="sonaEkle()">Sona
+        Ekle</a> | <a href="#" onclick="solaEkle()">Sola Ekle</a> | <a href="#" onclick="sagaEkle()">
+            Sağa Ekle</a> |<br />
+    <div id="d1">
+    </div>
+</body>
+</html>

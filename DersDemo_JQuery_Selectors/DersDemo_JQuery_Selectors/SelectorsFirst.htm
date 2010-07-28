@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        /*$(document).ready(function() { 
+        
+        });*/
+
+        $(function() {
+            $(".kirmizi").css("color", "red");
+            $("#div1").html("Div 1 bölgesi");
+            $("div").css("opacity", 0.5);
+            $(".kirmizi,#div1").css("font", "12pt verdana");
+        });
+    </script>
+
+</head>
+<body>
+    <div id="div1">
+    </div>
+    <span class="kirmizi">kızmızı renkte yazı olacak.</span>
+    <div class="kirmizi">
+        Kırmızı 2</div>
+    Ad :
+    <input type="text" id="tbName" />
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DersDemo_JQuery_Selectors", "DersDemo_JQuery_Selectors\DersDemo_JQuery_Selectors.csproj", "{86137755-D3EE-4016-97F9-FD240B0384DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86137755-D3EE-4016-97F9-FD240B0384DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86137755-D3EE-4016-97F9-FD240B0384DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86137755-D3EE-4016-97F9-FD240B0384DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86137755-D3EE-4016-97F9-FD240B0384DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
