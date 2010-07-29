@@ -22,7 +22,7 @@
         }
         #dGallery2 #dGallery2Inner
         {
-            width: 400px;
+            width: 388px;
         }
     </style>
 
@@ -41,8 +41,11 @@
                 var ml = parseInt($("#dGallery2 #dGallery2Inner").css("marginLeft"));
                 if (isNaN(ml)) ml = 0;
 
-                ml += 10;
+                //ml += 10;
+                ml += $("#dGallery2").width();
 
+                ButtonCheck(ml);
+                
                 $("#dGallery2 #dGallery2Inner").css("marginLeft", ml);
             });
 
@@ -50,13 +53,33 @@
                 var ml = parseInt($("#dGallery2 #dGallery2Inner").css("marginLeft"));
                 if (isNaN(ml)) ml = 0;
 
-                ml -= 10;
+                //ml -= 10;
+                ml -= $("#dGallery2").width();
+
+                ButtonCheck(ml);
 
                 $("#dGallery2 #dGallery2Inner").css("marginLeft", ml);
             });
             var td = $("td");
             var div = $("div");
         });
+
+        function ButtonCheck(ml) {
+            if (ml == 0) {
+                $("#bPrev").attr("disabled", true);
+            }
+            else {
+                $("#bPrev").attr("disabled", false);
+            }
+            
+            if (Math.abs(ml - $("#dGallery2").width()) >=
+                $("#dGallery2 #dGallery2Inner").width()) {
+                $("#bNext").attr("disabled", true);
+            }
+            else {
+                $("#bNext").attr("disabled", false);
+            }
+        }
     </script>
 
 </head>
