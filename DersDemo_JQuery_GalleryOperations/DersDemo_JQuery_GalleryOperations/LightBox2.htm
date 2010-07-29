@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script src="LightBox.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        .gt
+        {
+            width: 200px;
+            cursor: pointer;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function() {
+            LightBox("img:gt(2):lt(2)");
+        });        
+    </script>
+
+</head>
+<body>
+    <img src="m1.jpg" class="gt" />
+    <img src="m6.jpg" class="gt" />
+    <img src="m2.jpg" class="gt" />
+    <img src="m3.jpg" class="gt" />
+    <img src="m4.jpg" class="gt" />
+    <img src="m5.jpg" class="gt" />
+</body>
+</html>

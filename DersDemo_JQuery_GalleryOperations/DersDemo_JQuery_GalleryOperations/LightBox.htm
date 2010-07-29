@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        .gt
+        {
+            width: 200px;
+            cursor: pointer;
+        }
+        #lbBack
+        {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: black;
+            z-index: 10;
+        }
+        #lbContainer
+        {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 20;
+            background: transparent;
+        }
+        #lbContainer #lbImage
+        {
+            width: 400px;
+            padding: 10px;
+            margin: 50px auto 0 auto;
+            background: white;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function() {
+            $("img.gt").click(function() {
+                $("#lbBack,#lbContainer").show();
+                $("#lbContainer #lbImage #iImage")
+                    .attr("src", $(this).attr("src"))
+                    .width($("#lbContainer #lbImage #iImage").width() / 2)
+                    .click(function() { window.location = $(this).attr("src"); });
+                $("#lbContainer #lbImage").width($("#lbContainer #lbImage #iImage").width());
+            });
+            $("#lbBack")
+            .css("opacity", 0.6)
+            .add("#lbContainer")
+            .click(function() {
+                $("#lbBack,#lbContainer").hide();
+                $("#lbContainer #lbImage #iImage").width("auto");
+            });
+
+
+        });
+    </script>
+
+</head>
+<body>
+    <img src="m1.jpg" class="gt" />
+    <img src="m6.jpg" class="gt" />
+    <img src="m2.jpg" class="gt" />
+    <img src="m3.jpg" class="gt" />
+    <img src="m4.jpg" class="gt" />
+    <img src="m5.jpg" class="gt" />
+    <div id="lbBack" title="çıkış için tıklayınız">
+    </div>
+    <div id="lbContainer">
+        <div id="lbImage">
+            <img id="iImage" /></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function Ekle() {
+            var a = document.createElement("a");
+            a.href = "http://www.google.com";
+            a.style.textDecoration = 'none';
+            a.innerHTML = 'Google';
+
+            document.getElementById("dElements").appendChild(a);
+        }
+        $(function() {
+            $("#bEkle2").click(function() {
+                $("<a href='http://www.google.com' style='text-decoration:none'>Google</a>")
+                .click(function() { alert('Google gidiyoruz.'); })
+                .appendTo("#dElements2");
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <input type="button" value="Ekle" onclick="Ekle()" />
+    <div id="dElements">
+    </div>
+    <input type="button" value="Ekle" id="bEkle2" />
+    <div id="dElements2">
+    </div>
+</body>
+</html>

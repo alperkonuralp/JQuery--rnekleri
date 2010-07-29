@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#sCount").change(function() {
+                $("#dContainer").empty();
+                var sayi = parseInt($("#sCount").val());
+                for (var i = 0; i < sayi; i++) {
+                    $("<input type=file />").appendTo("#dContainer");
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <select id="sCount">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+    </select>
+    <div id="dContainer">
+    </div>
+</body>
+</html>

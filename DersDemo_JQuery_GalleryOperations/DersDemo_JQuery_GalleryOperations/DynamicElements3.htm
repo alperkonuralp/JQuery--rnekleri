@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var i = 1;
+        $(function() {
+            $("#aAddNew").click(function() {
+
+                var row = '<div class="cPhoneContainer"> ' +
+                    ' <select id="sType_' + i + '"><option value="et">Ev Telefonu</option><option value="it">İş Telefonu</option><option value="ct">Cep Telefonu</option></select>' +
+                    ' <input id="tbNumber_' + i + '" type="text" maxlength="10" />' +
+                    ' &nbsp;&nbsp;&nbsp; ' +
+                    ' <input id="bDelete_' + i + '" type="button" value="Sil" index=' + i + ' />' +
+                '</div>';
+                $(row).appendTo("#dContainer");
+                $("#dContainer .cPhoneContainer #bDelete_" + i)
+                .click(function() {
+                    $(this).parent().remove();
+                });
+                i++;
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div id="dContainer">
+        <div class="cPhoneContainer">
+            <select id="sType">
+                <option value="et">Ev Telefonu</option>
+                <option value="it">İş Telefonu</option>
+                <option value="ct">Cep Telefonu</option>
+            </select>
+            <input id="tbNumber" type="text" maxlength="10" />
+            &nbsp;&nbsp;&nbsp;
+            <input id="bDelete" type="button" value="Sil" />
+        </div>
+    </div>
+    <a id="aAddNew" href="#">Yeni telefon numarası ekle</a>
+</body>
+</html>

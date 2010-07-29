@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#ShowDemo").click(function() {
+                $("#Image").show(1000);
+            });
+            $("#HideDemo").click(function() {
+                $("#Image").hide(1000);
+            });
+            $("#FadeInDemo").click(function() {
+                $("#Image").fadeIn(1000);
+            });
+            $("#FadeOutDemo").click(function() {
+                $("#Image").fadeOut(1000);
+            });
+            $("#ScrollRightDemo").click(function() {
+                $("#Image").animate({ left: 500 }, 1000);
+            });
+            $("#ScrollLeftDemo").click(function() {
+                $("#Image").animate({ left: 10 }, 1000);
+            });
+
+            $("#A1").click(function() {
+                $("#Image").css("opacity", 0).show().animate({ opacity: 0.5 }, 1000);
+            });
+            $("#A2").click(function() {
+                $("#Image").animate({ opacity: 0 }, 1000);
+            });
+            $("#A3").click(function() {
+                $("#Image").animate({ left: 300, top: 200 }, 1000);
+            });
+            $("#A4").click(function() {
+                $("#Image").animate({ left: 10, top: 40 }, 1000);
+            });
+            $("#A5").click(function() {
+            $("#Image").animate({ left: Math.random() * 500, top: 40 + Math.random() * 160, opacity: Math.random() }, 1000);
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        #Image
+        {
+            position: absolute;
+            left: 10px;
+            top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <a id="ShowDemo" href="#">Show Image</a> <a id="HideDemo" href="#">Hide Image</a>
+    <a id="FadeInDemo" href="#">Fade In Image</a> <a id="FadeOutDemo" href="#">Fade Out
+        Image</a> <a id="ScrollRightDemo" href="#">Scroll Right Image</a> <a id="ScrollLeftDemo"
+            href="#">Scroll Left Image</a> <a id="A1" href="#">Opacity +0.5 Image</a>
+    <a id="A2" href="#">Opacity -0.5 Image</a> <a id="A3" href="#">Cross Left Image</a>
+    <a id="A4" href="#">Cross Right Image</a> <a id="A5" href="#">Cross Random Image</a>
+    <img id="Image" src="Kirmizi.png" style="display: none;" />
+</body>
+</html>
