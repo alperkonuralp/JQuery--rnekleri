@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        #ul1
+        {
+            width: 150px;
+            background: transparent none;
+            margin: 0;
+            padding: 0;
+            z-index: 200;
+        }
+        #ul1 li
+        {
+            background: transparent url(mavi.png) repeat-y scroll -650px;
+        }
+        #ul1 li:hover
+        {
+            /*background-position: -500px top;*/
+            color: White;
+            z-index: 200;
+        }
+    </style>
+
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#ul1 li")
+            .css("backgroundPosition", -650)
+            .mouseover(function() {
+                $(this).stop().animate({ backgroundPosition: -500 }, 500);
+            })
+            .mouseout(function() {
+                $(this).stop().animate({ backgroundPosition: -650 }, 500);
+            });
+
+            $("#a1").click(function() {
+                $("#i1").animate({ marginLeft: 500 }, 10000);
+            });
+
+            $("#a2").click(function() {
+                $("#i1").stop();
+            });
+
+            $("#a3").click(function() {
+                $("#i1").animate({ marginLeft: 0 }, 10000);
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+    <ul id="ul1">
+        <li>Ana Sayfa</li>
+        <li>Ürünler</li>
+        <li>Hakkımızda</li>
+        <li>Bize Ulaşın</li>
+    </ul>
+    <a id="a1" href="#">Başla</a> <a id="a2" href="#">Dur</a> <a id="a3" href="#">Geri</a><br />
+    <img id="i1" src="a01.jpg" />
+</body>
+</html>

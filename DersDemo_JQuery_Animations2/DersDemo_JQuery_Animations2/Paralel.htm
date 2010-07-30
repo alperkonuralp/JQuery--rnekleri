@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#a1").click(function() {
+                var of = $("#i2").offset();
+                $("#i2").css({
+                    position: 'absolute',
+                    left: of.left,
+                    top: of.top
+                });
+                var of = $("#i1").offset();
+                $("#i1").css({
+                    position: 'absolute',
+                    left: of.left,
+                    top: of.top
+                });
+                //$("#i1,#i2").animate({ left: 300 }, 1000);
+                $("#i1").animate({ left: 300 }, Math.random() * 2000);
+                $("#i2").animate({ left: 300 }, Math.random() * 2000);
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <a id="a1" href="#">Başla</a>
+    <br />
+    <img id="i1" src="a01.jpg" /><br />
+    <img id="i2" src="a02.jpg" /><br />
+    deneme
+</body>
+</html>

@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#ulMenu").children("li")
+            .mouseover(function() {
+                $(this).children("ul")
+                .css("opacity", 0)
+                .show()
+                .stop()
+                .animate({ opacity: 1 }, 500, function() { $(this).css("opacity", 1); });
+            })
+            .mouseout(function() {
+                $(this).children("ul")
+                .stop()
+                .delay(1000)
+                .animate({ opacity: 0 }, 500);
+            });
+            $("#ulMenu li ul").css("opacity", 0);
+            
+        });
+    </script>
+
+    <style type="text/css">
+        #ulMenu
+        {
+            width: 600px;
+            padding: 0;
+            margin: 0;
+            height: 20px;
+            list-style: none;
+            background: blue;
+            color: White;
+        }
+        #ulMenu li
+        {
+            /*width: 100px;*/
+            padding: 0 10px;
+            margin: 0 5px;
+            display: block;
+            float: left;
+            text-align: center;
+        }
+        #ulMenu li:hover
+        {
+            color: blue;
+            background: White;
+        }
+        #ulMenu li ul
+        {
+            /*display: none; */
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            background: #dddddd;
+        }
+        #ulMenu li ul li
+        {
+            /*width: 100px;*/
+            height: 20px;
+            padding: 0 10px;
+            margin: 0 5px;
+            display: block;
+            clear: both;
+            text-align: center;
+            background: #dddddd;
+        }
+        #ulMenu li ul li: hover
+        {
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul id="ulMenu">
+        <li>Ana Sayfa</li>
+        <li>Ürünler
+            <ul>
+                <li>İnşaat</li>
+                <li>Otomativ</li>
+                <li>Ağır Sanayi</li>
+                <li>Enerji</li>
+            </ul>
+        </li>
+        <li>Hizmetler
+            <ul>
+                <li>Turizm</li>
+                <li>Finans</li>
+            </ul>
+        </li>
+        <li>Hakkımızda
+            <ul>
+                <li>Biz Kimiz</li>
+                <li>Yönetim Kurulu</li>
+                <li>İletişim</li>
+            </ul>
+        </li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula
+        in justo suscipit adipiscing. Mauris convallis ullamcorper nulla a aliquam. Nam
+        condimentum purus sed libero venenatis sagittis. Vivamus accumsan, justo in dictum
+        congue, magna orci euismod nibh, quis dignissim lacus sem ut odio. Morbi libero
+        lorem, dignissim vel hendrerit in, eleifend ac sapien. Mauris et augue sit amet
+        nulla suscipit consequat et in neque. Nulla lacinia turpis justo. Proin ut tortor
+        libero, id dictum tortor. Sed sagittis tortor vitae turpis sollicitudin convallis
+        pellentesque quam dictum. Aliquam erat volutpat. Vestibulum ante ipsum primis in
+        faucibus orci luctus et ultrices posuere cubilia Curae; Proin at porttitor mi. Aliquam
+        erat volutpat. Pellentesque blandit, lorem dictum porttitor mattis, risus erat rutrum
+        velit, sit amet tincidunt lectus libero quis felis. Duis elit dolor, porttitor eu
+        tincidunt in, sodales in nibh. Vestibulum a nisi vitae ligula rutrum gravida.
+    </p>
+    <p>
+        Aliquam vulputate gravida mollis. In ac lectus eu nunc fringilla facilisis. Integer
+        eget massa lacinia quam vulputate iaculis. Ut sodales sem eget lectus dignissim
+        viverra sed id mi. Morbi condimentum urna non augue tempus a fermentum mi laoreet.
+        Vestibulum nisl quam, interdum sed sagittis vitae, molestie vel augue. Vivamus ullamcorper,
+        dolor ac pellentesque porttitor, enim nibh malesuada enim, eget scelerisque massa
+        ipsum id massa. Nunc fermentum adipiscing fringilla. Suspendisse potenti. Nulla
+        facilisi. Phasellus convallis venenatis purus. Nam eget consequat purus. Fusce pharetra
+        ornare vehicula. Cras fringilla aliquam orci non facilisis. Nam nulla lectus, lobortis
+        eget facilisis ac, accumsan non orci. Ut vel massa metus. Suspendisse et nisl purus.
+        Nunc enim arcu, porttitor id eleifend consequat, rutrum vel lorem. Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+        mus.
+    </p>
+    <p>
+        Quisque a purus ac risus blandit commodo. Ut accumsan diam in sem sagittis ut suscipit
+        tortor mattis. Quisque placerat tortor sed nunc euismod vel porta lorem pharetra.
+        Aliquam ut diam enim, et fringilla nunc. Vestibulum molestie, odio eu venenatis
+        ultricies, elit est lacinia velit, vitae interdum lectus diam sit amet mauris. Quisque
+        vehicula odio quis mauris rhoncus a sollicitudin urna volutpat. Mauris porta tincidunt
+        vulputate. In vitae orci mi, nec pharetra lacus. Curabitur non mi purus, quis mattis
+        sem. Fusce dignissim vulputate elementum. Donec in quam risus. Duis lacinia dui
+        ut sapien vestibulum ut consectetur est elementum. Mauris rhoncus pulvinar lorem,
+        ac sollicitudin massa euismod vitae. Sed imperdiet nisi non purus gravida a mattis
+        orci pharetra. Curabitur mi nunc, porttitor ac elementum vulputate, pretium at nisi.
+        Morbi in eros nunc, vel tristique tortor.
+    </p>
+    <p>
+        In scelerisque, diam vel condimentum volutpat, eros enim imperdiet magna, volutpat
+        pharetra odio sapien ut ligula. Etiam ut dolor sit amet ligula consectetur dapibus.
+        Nullam sed fermentum nisl. Aenean ut elit mi, sed tempor mi. Phasellus urna ligula,
+        tempus id vulputate eu, tempus id felis. Phasellus in velit sit amet odio sodales
+        aliquam ac at lorem. Curabitur malesuada euismod tincidunt. Nullam tincidunt libero
+        dignissim tellus condimentum nec fermentum justo iaculis. Vestibulum ac posuere
+        felis. Proin dignissim luctus odio, in egestas turpis hendrerit vitae.
+    </p>
+    <p>
+        Donec vel elit ut orci tristique rutrum. Pellentesque justo velit, feugiat sit amet
+        mattis eu, ornare sagittis sem. Aliquam feugiat egestas euismod. Sed ac nunc vitae
+        elit scelerisque bibendum et at purus. Duis a justo orci, et porttitor tellus. Morbi
+        a lorem enim, quis blandit tortor. Suspendisse non ipsum sed quam tempor feugiat.
+        Morbi luctus tempus urna, in ornare lorem sollicitudin in. Nunc vitae nibh ac quam
+        consectetur auctor. Morbi in arcu nibh. Morbi mollis diam eget lorem lobortis consequat.
+        Donec ut nunc sit amet massa cursus rhoncus. Suspendisse potenti. Maecenas a molestie
+        nisi. Aliquam malesuada mollis ante ut aliquet.
+    </p>
+    
+ 
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Tools standalone demo</title>
+
+    <script src="jquery.tools.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="css.css" />
+    <style type="text/css">
+        /* tab pane styling */
+        .panes div
+        {
+            display: none;
+            padding: 15px 10px;
+            border: 1px solid #999;
+            border-top: 0;
+            height: 100px;
+            font-size: 14px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- the tabs -->
+    <ul class="tabs">
+        <li><a href="#">Tab 1</a></li>
+        <li><a href="#">Tab 2</a></li>
+        <li><a href="#">Tab 3</a></li>
+    </ul>
+    <!-- tab "panes" -->
+    <div class="panes">
+        <div>
+            First tab content. Tab contents are called "panes"</div>
+        <div>
+            Second tab content</div>
+        <div>
+            Third tab content</div>
+    </div>
+    <!-- This JavaScript snippet activates those tabs -->
+
+    <script>
+
+        // perform JavaScript after the document is scriptable.
+        $(function() {
+            // setup ul.tabs to work as tabs for each div directly under div.panes
+            $("ul.tabs").tabs("div.panes > div");
+        });
+    </script>
+
+</body>
+</html>

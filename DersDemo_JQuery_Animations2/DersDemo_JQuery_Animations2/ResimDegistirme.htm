@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("img").click(function() {
+                if (!window.first) {
+                    // Eğer ilk tıklamaysa
+                    window.first = $(this);
+                    $(this).css("border", '2px solid blue');
+                }
+                else {
+                    // eğer ikinci tıklamaysa
+                    var src = window.first.attr("src");
+                    window.first.attr("src", $(this).attr("src"));
+                    $(this).attr("src", src);
+                    window.first.css("border", "0");
+                    window.first = null;
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <img id="i1" src="a01.jpg" />
+    <img id="i2" src="a02.jpg" />
+    <br />
+    <img id="i3" src="a03.png" />
+    <img id="i4" src="a04.png" />
+</body>
+</html>

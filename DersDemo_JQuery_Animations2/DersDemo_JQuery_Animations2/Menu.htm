@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        #ul1
+        {
+            width: 150px;
+            background: transparent none;
+            margin: 0;
+            padding: 0;
+            z-index: 200;
+        }
+        #ul1 li:hover
+        {
+            /* background: blue; */
+            color: White;
+            z-index: 200;
+        }
+    </style>
+
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            var of = $("#ul1").offset();
+            $("#ul1").css({
+                position: 'absolute',
+                left: of.left,
+                top: of.top
+            });
+            $("#ul1 li").each(function(i, item) {
+                var of = $(item).offset();
+                $(item).attr("divid", "#dMenuBack_" + i);
+                $("<div id='dMenuBack_" + i + "' class='cMenuBackItem' " +
+                "style='position:absolute; z-index:10; width: 0px;' />")
+                .css({
+                    background: 'blue',
+                    left: of.left,
+                    top: of.top,
+                    height: $(item).height()
+                }).appendTo(document.body);
+
+            })
+            .mouseover(function() {
+                var divid = $(this).attr("divid");
+
+                $(divid).animate({ width: 150 }, 500);
+            })
+            .mouseout(function() {
+                var divid = $(this).attr("divid");
+
+                $(divid).animate({ width: 0 }, 500);
+            }
+            );
+        });
+    </script>
+
+</head>
+<body>
+    <ul id="ul1">
+        <li>Ana Sayfa</li>
+        <li>Ürünler</li>
+        <li>Hakkımızda</li>
+        <li>Bize Ulaşın</li>
+    </ul>
+</body>
+</html>

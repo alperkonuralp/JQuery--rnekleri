@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        #i1, #i2
+        {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+        }
+        #i2
+        {
+            left: 250px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#a1").click(function() {
+                /*$("#i1").animate({ left: 250 }, 1000,
+                function() {
+                $("#i2").animate({ left: 500 }, 1000);
+                });
+                */
+                $("#i1").animate({ left: 250 }, 1000);
+                $("#i2").animate({top: 50}, 2000).animate({ left: 500 }, 1000);
+
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <a id="a1" href="#">Başla</a>
+    <img id="i1" src="a01.jpg" />
+    <img id="i2" src="a02.jpg" />
+</body>
+</html>
