@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Manipulation</title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        #dMenu
+        {
+            background: blue;
+            color: White;
+            padding: 5px 10px;
+            text-align: center;
+        }
+        #dMenu .cMenuItem
+        {
+            background: blue;
+            color: White;
+            padding: 0 10px;
+            border-left: 1px solid #dddddd;
+            text-decoration: none;
+        }
+        #dMenu .cMenuItem:first-child
+        {
+            border-left: 0 solid #dddddd;
+        }
+        #dMenu .cMenuItem:hover
+        {
+            background: White;
+            color: blue;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function() {
+
+            // appendTo belirtilen elemanı ve/veya elemanları
+            // parametresindeki seçici ile  belirtilen elemanın
+            // içine taşır veya ekler.
+            // taşıma : halihazırda sayfa içinde yer alan
+            // elemanlarda yapılır.
+            // ekleme : yeni oluşturulmuş elemanlarda yapılır.
+
+            // Append To sona ekleme anlamına gelir.
+
+            //$("#MenuItems a")
+            //    .addClass("cMenuItem")
+            //    .appendTo("#dMenu");
+
+            // ters anlamlı olarak prependTo kullanılabilir
+            // buda başa ekle anlamına gelir.
+
+            $("#MenuItems a")
+                .addClass("cMenuItem")
+                .prependTo("#dMenu");
+
+            // prependTo ve appendTo o an çalışılan eleman veya
+            // elemanları istediğimiz yere eklememizi sağlar.
+            // ancak bunun  yerine append veya prepend kullanılırsa,
+            // anlam terse döner.
+            // append veya prepend dediğimizde, çalışılan eleman veya elemanlar
+            // içerisine parametrede yazılan elemanın eklenmesi sağlanır.
+
+            $("#dMenu").append("asd");
+            $("#dMenu").prepend("asd");
+
+            // append, prepend, appendTo, prependTo :
+            // elemanların birbaşka eleman içerisine eklenmelerini
+            // sağlar.
+
+            // after, before : elemanları birbaşka elemanın önüne veya arkasına
+            // eklemeyi sağlar.
+
+            $("#dMenu")
+                .before("<h1>Menü:</h1>")
+                .after("İşlemler");
+
+            $("#dMenu .cMenuItem").click(function() {
+                window.location = "http://www.google.com";
+                return false;
+            });
+
+            $("#MenuItems").after($("#dMenu").clone().attr("id", "dMenu2"));
+            //$("#MenuItems").after($("#dMenu").clone().attr("id", "dMenu2").empty());
+            // bir elemanın içindeki bütün elemanları silmek için empty
+            // fonksiyonunu kullanırız.
+            // tek bir elemanı silmek ise remove fonksiyonunu kullanırız.
+            $("#dMenu2 a:eq(2)").remove();
+
+            // dMenu2 içindeki elemanlardan a olmayanları silmek
+            var elms = $("#dMenu2 a");
+            $("#dMenu2").empty().append(elms);
+
+            // replaceWith : sol tarafta belirtilen eleman veya elemanlar yerine sağ taraftaki elemanların yerleşmesini sağlar
+            //$("#dMenu2 a").replaceWith("<span>Deneme Linki</span>");
+   
+            // replaceAll : sağ tarafta belirtilen eleman veya elemanlar yerine sol taraftaki elemanların yerleşmesini sağlar
+            //$("<span>Deneme Linki</span>").replaceAll("#dMenu2 a");
+
+            //wrap : sol taraftaki elemanları sağ taraftaki elemanın alt elemanları olarak ekler.
+            $("#dMenu2 a").wrap("<div class=cMenuItem />")
+        });
+    </script>
+
+</head>
+<body>
+    <div id="dMenu">
+        <a href="#" class="cMenuItem">İlk</a>
+    </div>
+    <div id="MenuItems">
+        <a href="#">Ana Sayfa</a> <a href="#">Ürünler</a> <a href="#">Hakkımızda</a> <a href="#">
+            Bize Ulaşın</a>
+    </div>
+</body>
+</html>

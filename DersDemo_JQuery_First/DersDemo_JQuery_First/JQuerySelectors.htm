@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            // css den hatırlanacak bu yöntem ile bütün taglara 
+            // ulaşılabilir.
+            $("div").css("border", '1px solid red');
+
+            // id üzerinden bir elemana ulaşmak
+            $("#d1").css("background", "gray");
+
+            // class tanımları üzerinde bir elemana ulaşmak
+            $(".tHead").css("font", "14pt tahoma, verdana");
+            $(".tBody").css("font", "12pt tahoma, verdana");
+
+            // iç içe tanımlama
+            $("#d3 div").html("yazı 1");
+
+            // iç içe tanımlama (tek seviye)
+            $("#d3 > div").html("yazı 1");
+
+            // beraber kullanım
+            $("div, td").css("textDecoration", "underline");
+            $("#d1, #d2").prepend("Denemedir.");
+
+            // yukarıdaki işlemler css'de de aynen kullanılabilmektedir.
+
+            // bazı ayrılan özellikler
+            // elemanlar arasından bir tanesini almak:
+            //            $("div:eq(3)").hide(1000).show(1000);
+            $("div").eq(3).hide(1000).show(1000);
+            // ile ifade edilen değer indeks değeridir. ve 0 başlangıç 
+            // noktasından başlar
+
+            // indeks numarasının belli bir değerden küçük olması durumu:
+            $("div:lt(2)").fadeOut(1000).fadeIn(1000);
+
+
+            // indeks numarasının belli bir değerden büyük olması durumu:
+            $("div:gt(0)").css("background", "#efefef");
+
+
+            // beraber kullanımda dikkat edilmesi gereken bir nokta
+            // lt veya gt uygulandıktan hemen sonra listede elemanlar
+            // azalır bu yüzden indeks numaralarıda değişir. bir biri
+            // ardına kullanılacaklar ise yenilenmiş indeks numaralarına 
+            // göre çalışmak gerekir.
+            //$("div:gt(0):lt(2)") : 1. indeksten itibaren 2 eleman al
+
+            // elemanlar içinden bazı elemanların çıkartılması
+            $("*:not(body)"); // body haricindeki herşeyi al
+            $("div:not(:eq(2))"); // divler içinden indeksi 2 olmayanları getir.
+
+            // elemanlardan tek indekse sahip elemanların 
+            // bulunması
+            $("td:even"); // Çift indekse sahip elemanları alır
+            $("td:odd"); // tek indekse sahip elemanıları alır
+
+
+            $("td:even").css("background", "pink");
+
+            // ilk elemanı bulmak için first-child kullanılır:
+            $("tr:first-child").css("border", "1px solid black");
+
+            // rel attribute'nu içeren div elemanlarını yakalamak.
+            $("div[rel]");
+
+            // rel attribute'u içinde b olan elemanları bulmak.
+            $("div[rel=b]");
+
+            // rel attribute'u a ile başlayanları bulmak.
+            $("div[rel^=a]");
+
+            // rel attribute'u a ile bitenleri bulmak.
+            $("div[rel$=a]");
+
+            // img resimlerinden png uzantılı olanları bulmak
+            $("img[src$=.png]");
+
+            // rel attribute'u içinde a olanları bulmak.
+            $("div[rel*=a]");
+
+
+            // butonları bulmak
+            $("input[type=button]");
+            $(":button")
+
+            // textboxları bulmak
+            $("input[type=text]");
+            $(":text");
+
+
+            // Seçili elemanın bulunması
+            $("#d6").html(
+                "Value : " +
+                $("#s1 option:selected").val() +
+                " ,   Text : " +
+                $("#s1 option:selected").html());
+        });
+    </script>
+
+</head>
+<body>
+    <div id="d1" rel="b">
+        &nbsp;
+    </div>
+    <div id="d2">
+        &nbsp;
+    </div>
+    <div id="d3" rel="a">
+        <div id="d4">
+            &nbsp;
+        </div>
+        <div id="d5" rel="a1">
+            <div id="Div1" rel="a1">
+                <div id="Div2" rel="a1">
+                    <div id="Div3" rel="a1">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table id="t1">
+        <tr>
+            <td class="tHead">
+                Deneme
+            </td>
+        </tr>
+        <tr>
+            <td class="tBody">
+                Satır 1
+            </td>
+        </tr>
+        <tr>
+            <td class="tBody">
+                Satır 2
+            </td>
+        </tr>
+        <tr>
+            <td class="tBody">
+                Satır 3
+            </td>
+        </tr>
+    </table>
+    <select id="s1">
+        <option value="1">Deneme 1</option>
+        <option value="2">Deneme 2</option>
+        <option value="3" selected="selected">Deneme 3</option>
+        <option value="4">Deneme 4</option>
+    </select>
+    <div id="d6">
+    </div>
+</body>
+</html>

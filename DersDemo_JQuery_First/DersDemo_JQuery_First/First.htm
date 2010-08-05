@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <!-- local'de yer alan jQuery'nin sayfaya eklenmesi -->
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        // 1. Yöntem : sayfanın onload olayı için kod yazmak.
+        // sayfa tamamen yüklendikten sonra çalışan olay
+        // load olayı olduğu için, sayfa bütün işlemler yapılmış
+        // ve bütün resimler yüklenmiş olur.
+        // bu yöntem ile sayfanın istediğimiz yerine javascript
+        // kodları ekleyebiliriz.
+        $(document).ready(function() { });
+        // ready : onload olayı için bir isim tanımlar.
+        // üstteki satırın anlamı : döküman hazır olduğunda şu fonksiyonu çalıştır.
+        // bu uzun yazım olarak bilinir. Bunun yerine daha kısa bir yazım olan
+        $(function() { });
+        // da kullanılabilir. Anlam olarak her iki yazımda aynıdır.
+    </script>
+</head>
+<body>
+
+<script type="text/javascript">
+    // 2.yöntem : sayfanın en altında jquery kodlarını yazmak.
+    $(document.body).css("background", "gray");
+
+    // JQuery için başlangıç elemanı esasında jQuery ismindeki
+    // fonksiyondur. ancak bu yazım uzun olduğu için kısaca $
+    // işareti bu fonksiyon ile aynı anlama gelecek şekilde
+    // tasarlanmıştır.
+    $("body");
+    jQuery("body");
+    // bazı yerlerde $ farklı anlamlar için kullanıldıysa, jquery
+    // için kullanımı mümkün olmayabilir. bu yerlerde $ yerine
+    // jQuery ifadesi kullanılabilir veya şu yöntemle $ jquery
+    // için ayarlanabilir.
+    (function($) {
+        $("body");
+    })(jQuery);
+</script>
+</body>
+</html>

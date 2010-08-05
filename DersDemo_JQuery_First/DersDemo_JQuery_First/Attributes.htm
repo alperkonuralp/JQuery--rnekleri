@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JQuery Attrubutes</title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            // 1. yöntem bir eleman üzerine yeni attribute
+            // eklemek veya var olan attribute'un değerini 
+            // değiştirmek.
+            $("#d1").attr("align", "center");
+            // iki parametreli attr fonksiyonu kullanılır.
+            // ilk parametre, istenen attribute'un ismidir.
+            // ikinci parametre ise attribute'a atanacak değerdir.
+
+            // 2. Yöntem var olan bir attribute'un değerini öğrenmek
+            var a = $("#d1").attr("align");
+            // tek parametreli attr fonksiyonu kullanılır.
+            // tek parametre öğrenilmek istenilen attribute'un adıdır.
+
+
+            // eğer bir elemana birden fazla attribute aynı anda
+            // eklenmek isteniyorsa:
+            $("#d1").attr("align", "center").attr("asd", "sdf");
+            // bu uzun yazım yerine kısaca:
+            $("#d1").attr({ align: "center", asd: "sdf" });
+
+
+            // bir attribute'un silinmesi
+            $("#d1").removeAttr("asd");
+
+            // elementler içindeki yazıları görmek için 1 fonksiyon
+            // kullanılır
+            // html fonksiyonu: bir elementin içindeki bütün html
+            // elementlerini metin türünde geri döndürür.
+            var a = $("#d2").html();
+
+            // elementin içine birşeyler eklemek için yine
+            // html fonksiyonu kullanılabilir. O zaman html
+            // parametreli olarak çağırılır. ve bu parametrede
+            // elemanın içine yazılması istenen yazı yer alır.
+
+            $("#d2 a:first-child").html("Google Arama Motoru <img src='a.png'/>");
+
+
+            // class üzerinde işlem yapmak için bir kaç tane
+            // fonksiyon bulunmakta.
+            // addClass : elemana yeni bir class eklemeyi sağlar
+            $("#d2").addClass("a1");
+            $("#d2").addClass("a2");
+
+            // hasClass : bir elementin bir sınıfı uygulayıp
+            // uygulamadığını görmemizi sağlar
+            // removeClass : bir elementin sınıfını silmeye yarar
+            //            if ($("#d2").hasClass("a2")) {
+            //                //alert("Var");
+            //                $("#d2").removeClass("a2")
+            //            }
+            //            else {
+            //                //alert("Yok");
+            //                $("#d2").addClass("a2");
+            //            }
+
+            //toggleClass: eğer bir eleman üzerinde class var ise
+            //kaldırır, yoksa ekler
+            $("#d2").toggleClass("a2");
+
+
+            $("#d2 a:eq(1)").click(function() {
+                $(this).toggleClass("a2");
+            });
+
+
+            $("input").blur(function() {
+                alert($(this).val());
+            });
+
+            $("#s1").change(function() {
+                //alert($(this).val());
+                alert($("#s1 option:selected").val());
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        .a1
+        {
+            font: 12pt tahoma, verdana;
+        }
+        .a2
+        {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+        Merhaba Dünya
+    </div>
+    <div id="d2">
+        <a href="http://www.google.com">Google</a> <a href="#">Bas</a>
+    </div>
+    <input type="text" value="abc" id="tb1" />
+    <input type="radio" value="abc" id="rb1" />
+    <input type="checkbox" value="abc" id="chb1" />
+    <select id="s1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+</body>
+</html>

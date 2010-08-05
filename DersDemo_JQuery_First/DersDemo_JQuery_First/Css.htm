@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Css Özelliklerini değiştirmek</title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            // addClass, removeClass, toggleClass : bir önceki konuda incelemiştik.
+
+            // eleman üzerinde inline olarak css yazmaya yarıyan fonksiyonumuz css fonksiyonu.
+            // css ile bir css özelliği vermek
+            $("#dContainer")
+            .css("width", "700px")
+            .css("height", "400px");
+
+            // bu kullanımda ilk parametre css özelliğinin ismi
+            // 2. parametre ise bu özelliğe atanacak değer olmalıdır.
+
+            // birden fazla özelliğer bir anda değer atamak istersek
+            // o zaman attrde kullandığımız nesne yöntemini burada da
+            // kullanabiliriz.
+            $("#dContainer")
+            .css({ width: "700px", height: "400px" });
+
+            // css özelliğinin öğrenilmesi :
+            var width = $("#dContainer").css("width");
+
+            // aşağıdaki elemanlarla ilgili bir çalışma yapalım:
+            $("#dContainer").css({
+                width: "700px",
+                height: "",
+                border: '1px solid #dddddd',
+                margin: '10px auto'
+            });
+
+            $("#dHeader").css({
+                width: '100%',
+                height: '50px',
+                font: '20pt Tahoma, Verdana, serif',
+                background: 'Blue',
+                color: 'white',
+                textAlign: 'center',
+                paddingTop: 5
+            }).html("Deneme Sitesi");
+
+            $("#dBody").css({
+                width: '100%',
+                minHeight: '200px',
+                font: '12pt Tahoma, Verdana, serif',
+                background: '#e0e0e0',
+                color: '#333333',
+                textAlign: 'justify'
+            }); //.html("Sitenin Gövdesi");
+
+            $("#dFooter").css({
+                width: '100%',
+                height: '40px',
+                font: '11pt Tahoma, Verdana, serif',
+                background: 'Blue',
+                color: 'white',
+                textAlign: 'center'
+            }).html("Bu site bir .... yapımıdır. &copy;2010");
+
+
+            // each fonksiyonu ile jquery tarafından seçilmiş
+            // elemanlar içerinde bir döngü kurmak mümkündür.
+            //$("div").each(function(i, item) {
+            //    alert($(item).attr("id"));
+            //});
+
+            // sayfa içindeki bütün divlerin bazı özelliklerini
+            // dBody içerisine p tagları ile aktarmak.
+            $("div").each(function(i, item) {
+                var it = $(item);
+                $("<p/>")
+                    .css({ width: 348, float: 'left' })
+                    .append("ID : " + it.attr("id"))
+                    .append("<br/>Width(css) : " + it.css("width"))
+                    .append("<br/>Width : " + it.width())
+                    .append("<br/>InnerWidth : " + it.innerWidth())
+                    .append("<br/>OuterWidth : " + it.outerWidth())
+                    .append("<br/>Height(css) : " + it.css("height"))
+                    .append("<br/>Height : " + it.height())
+                    .append("<br/>InnerHeight : " + it.innerHeight())
+                    .append("<br/>OuterHeight : " + it.outerHeight())
+                    .appendTo("#dBody");
+            });
+            /*$("<p/>")
+            .css({ width: 348, float: 'left' })
+            .append("Screen : ")
+            .append("<br/>Width : " + $(screen).width())
+            //        .append("<br/>InnerWidth : " + $(screen).innerWidth())
+            //        .append("<br/>OuterWidth : " + $(screen).outerWidth())
+            .append("<br/>Height : " + $(screen).height())
+            .appendTo("#dBody");*/
+            $("<p/>")
+                    .css({ width: 348, float: 'left' })
+                    .append("Document : ")
+                    .append("<br/>Width : " + $(document).width())
+            //        .append("<br/>InnerWidth : " + $(document).innerWidth())
+            //        .append("<br/>OuterWidth : " + $(document).outerWidth())
+                    .append("<br/>Height : " + $(document).height())
+                    .appendTo("#dBody");
+
+            $("<p/>")
+                    .css({ width: 348, float: 'left' })
+                    .append("Body : ")
+                    .append("<br/>Width : " + $(document.body).width())
+                    .append("<br/>InnerWidth : " + $(document.body).innerWidth())
+                    .append("<br/>OuterWidth : " + $(document.body).outerWidth())
+                    .append("<br/>Height : " + $(document.body).height())
+                    .append("<br/>InnerHeight : " + $(document.body).innerHeight())
+                    .append("<br/>OuterHeight : " + $(document.body).outerHeight())
+                    .appendTo("#dBody");
+
+
+            $("<div style='clear:both; width: 0; height:0; line-height:0;'/>")
+                .appendTo("#dBody");
+
+            // bir elemanın sayfa içindeki yeri:
+            var of = $("#dFooter").offset();
+            alert("x: " + of.left + " , y: " + of.top);
+
+            // bir elemanın bir üst eleman içindeki konumu:
+            var po = $("#dBody").position();
+            alert("x: " + po.left + " , y: " + po.top);
+
+
+            window.setTimeout('Kaydir()', 5000);
+        });
+
+        function Kaydir() {
+            // eleman'ın eğer scroll barı çıktıysa bu eleman 
+            // içindeki elemanların aşağıya veya yukarıya
+            // kaydırılmasını sağlayabiliriz.
+            // scrollTop fonksiyonunu kullanabiliriz.
+            // 1. kullanımda scrollTop değerini öğreniriz:
+            var st = $(document).scrollTop();
+            st += 1;
+            // 2. Kullanımda da scrollTop değerine yeni bir değer 
+            // atayarak istediğimiz değere sahip olmasını sağlarız.
+            $(document).scrollTop(st);
+            if (st == $(document).scrollTop())
+                window.setTimeout('Kaydir()', 100);
+            else {
+                alert("st: " + st + ", Scroll Top: " + $(document).scrollTop());
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <div id="dContainer">
+        <div id="dHeader">
+        </div>
+        <div id="dBody">
+        </div>
+        <div id="dFooter">
+        </div>
+    </div>
+</body>
+</html>
