@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Data</title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var veri = [
+            { Ad: 'Alper', Soyad: 'Konuralp', Vize: 55, Final: 65 },
+            { Ad: 'Burcu', Soyad: 'Konuralp', Vize: 65, Final: 75 },
+            { Ad: 'Yağmur', Soyad: 'Konuralp', Vize: 75, Final: 77 },
+            { Ad: 'Ali', Soyad: 'Konuralp', Vize: 65, Final: 65 }
+        ];
+
+        $(function() {
+            for (var i = 0; i < veri.length; i++) {
+                var ver = veri[i];
+                $('<tr />')
+                        .append($('<td/>').html(ver.Ad + ' ' + ver.Soyad))
+                //.append($('<td/>').html(ver.Soyad))
+                        .append($('<td/>').html(ver.Vize))
+                        .append($('<td/>').html(ver.Final))
+                        .appendTo('#t1')
+                        .data('Ad', ver.Ad)
+                        .data('Soyad', ver.Soyad)
+                        .data('Vize', ver.Vize)
+                        .data('Final', ver.Final)
+                //.data(ver)
+                        .mouseover(function() {
+
+                            //$('#d1').empty()
+                            //    .append('Ad : ' + $(this).children('td').eq(0).html() + '<br/>')
+                            //    .append('Soyad : ' + $(this).children('td').eq(1).html() + '<br/>')
+                            //    .append('Vize : ' + $(this).children('td').eq(2).html() + '<br/>')
+                //    .append('Final : ' + $(this).children('td').eq(3).html() + '<br/>');
+                            
+                            $('#d1').empty()
+                                .append('Ad : ' + $(this).data('Ad') + '<br/>')
+                                .append('Soyad : ' + $(this).data('Soyad') + '<br/>')
+                                .append('Vize : ' + $(this).data('Vize') + '<br/>')
+                                .append('Final : ' + $(this).data('Final') + '<br/>');
+
+                        });
+            }
+        });
+    </script>
+
+</head>
+<body>
+    <table id="t1">
+    </table>
+    <div id="d1">
+    </div>
+</body>
+</html>

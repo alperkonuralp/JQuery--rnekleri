@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Animasyonlar</title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script src="jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('#a1').click(function() { $('#d1').hide(1000); });
+            $('#a2').click(function() { $('#d1').show(1000); });
+            $('#a3').click(function() { $('#d1').fadeIn(1000); });
+            $('#a4').click(function() { $('#d1').fadeOut(1000); });
+            $('#a5').click(function() { $('#d1').slideDown(1000); });
+            $('#a6').click(function() { $('#d1').slideUp(1000); });
+            $('#a7').click(function() {
+                var l = ($(document).width() - 141) / 2;
+                var t = ($(document).height() - 165) / 2;
+                $('#i1')
+                .css('opacity', 1)
+                .show()
+                .animate({
+                    width: 141, height: 165, left: l, top: t
+                }, { duration: 3000, easing: 'easeInElastic' });
+            });
+            $('#a8').click(function() {
+
+                $('#i1')
+                .css('opacity', 1)
+                .show()
+                .animate({
+                    width: 0, height: 0, left: 0, top: 0, opacity: 1
+                }, 3000);
+            });
+            $('#a9').click(function() {
+
+                $('#i1')
+                .css('opacity', 1)
+                .show()
+                .effect('explode', 1000);
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        #d1
+        {
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+        #i1
+        {
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="a1">Gizle</a> <a href="#" id="a2">Göster</a> | <a href="#" id="a3">Fade
+        In</a> <a href="#" id="a4">Fade Out</a> | <a href="#" id="a5">Slide Down</a>
+    <a href="#" id="a6">Slide Up</a>
+    <div id="d1">
+    </div>
+    <a href="#" id="a7">Getir</a> <a href="#" id="a8">Götür</a> <a href="#" id="a9">Patla</a><br />
+    <img id="i1" src="Kirmizi.png" width="141" height="165" />
+</body>
+</html>

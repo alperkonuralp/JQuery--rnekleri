@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Image Scroll</title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script src="jquery.cycle.all.min.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        #d1
+        {
+            height: 124px;
+            width: 129px;
+            padding: 0;
+            margin: 0 auto;
+        }
+        #d1 img
+        {
+            padding: 15px;
+            border: 1px solid #ccc;
+            background-color: #eee;
+            width: 97px;
+            height: 92px;
+            top: 0;
+            left: 0;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $('#d1').cycle({ fx: 'shuffle', timeout: 2000, speed: 500 });
+    
+    </script>
+
+</head>
+<body>
+    <div id="d1">
+        <img src="a01.jpg" />
+        <img src="a04.png" />
+        <img src="a02.jpg" />
+        <img src="a03.png" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Events</title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('#a1').click(function() {
+                window.location = 'http://www.iakademi.com';
+                return false;
+            });
+
+            $('#d1').click(function() {
+                $(this).animate({ fontSize: 32 }, 2000);
+            })
+            .mouseover(function() {
+                $(this).css({ background: 'Blue', color: 'white' });
+            })
+            .mouseout(function() {
+                $(this).css({ background: '', color: '' });
+            });
+
+            //            $('div').click(function() { alert('div is clicked'); });
+            $('div').live('click', function() { alert('div is clicked'); });
+
+            $('<div>Deneme</div>').appendTo(document.body);
+
+            $('#a2').one('click', function() {
+                alert('Tıklandı.');
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <a id="a1" href='http://www.google.com'>Google</a>
+    <div id="d1">
+        İ-Akademi
+    </div>
+    <a id="a2" href="#">Denemedir.</a>
+</body>
+</html>

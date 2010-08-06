@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Traversing</title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            //$('#d1').css('fontSize', '16pt')
+            //    .add('#d2')
+            //    .css('fontFamily', 'tahoma, verdana');
+
+            //add fonksiyonu ile yeni elemanları listeye ekleyebiliriz.
+
+            // not ile listeden elemanlar çıkartabiliriz.
+            $('#d1,#d2').css('fontFamily', 'tahoma, verdana')
+                .not('#d2')
+                .css('fontSize', '16pt');
+
+            // eq : seçicideki anlamında kullanılabilir.
+            // first ilk elemanı almaya yarar
+            // last son elemanı almaya yarar
+
+
+            // next ile seçtiğimiz elemandan sonraki ilk eleman alınır.
+            // eğer sonra bir eleman yok ise o zaman liste boş gelir.
+            // tam tersi olarak prev fonksiyonu ile bir önceki elemanı 
+            // öğrenebiliriz.
+            //            $('.cSubMenuItems').css('margin-left', '10px').hide();
+            //            $('.cMenuItem').css({ cursor: 'pointer' })
+            //                .click(function() {
+            //                    $(this).next().toggle(500);
+            //                });
+
+            // akordiyon:
+            $('.cSubMenuItems').css('margin-left', '10px').hide();
+            $('.cMenuItem').css({ cursor: 'pointer' })
+                 .click(function() {
+                     var elm = $(this).next().show(500);
+                     $('.cSubMenuItems').not(elm).hide(500);
+                 });
+        });
+    </script>
+
+</head>
+<body>
+    <div id="d1">
+        Başlık
+    </div>
+    <div id="d2">
+        Gövde
+        <div class='cMenuItem'>
+            Ürünler</div>
+        <div class='cSubMenuItems'>
+            Gıda Ürünleri<br />
+            Otomativ Ürünleri<br />
+            Tekstil Ürünleri
+        </div>
+        <div class='cMenuItem'>
+            Bizden</div>
+        <div class='cSubMenuItems'>
+            Hakkımızda<br />
+            Bize Ulaşın<br />
+            İletişim
+        </div>
+        <div class='cMenuItem'>
+            Ürünler</div>
+        <div class='cSubMenuItems'>
+            Gıda Ürünleri<br />
+            Otomativ Ürünleri<br />
+            Tekstil Ürünleri
+        </div>
+        <div class='cMenuItem'>
+            Bizden</div>
+        <div class='cSubMenuItems'>
+            Hakkımızda<br />
+            Bize Ulaşın<br />
+            İletişim
+        </div>
+        <div class='cMenuItem'>
+            Ürünler</div>
+        <div class='cSubMenuItems'>
+            Gıda Ürünleri<br />
+            Otomativ Ürünleri<br />
+            Tekstil Ürünleri
+        </div>
+        <div class='cMenuItem'>
+            Bizden</div>
+        <div class='cSubMenuItems'>
+            Hakkımızda<br />
+            Bize Ulaşın<br />
+            İletişim
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Cookie 1</title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script src="jquery.cookie.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('#tbFullName').val($.cookie('UserFullName'));
+            $('#bSave').click(function() {
+                $.cookie('UserFullName', $('#tbFullName').val(), { expires: 30 });
+            });
+            $('#bDelete').click(function() {
+                $.cookie('UserFullName', null);
+            });
+        });
+    </script>
+
+</head>
+<body>
+    Ad Soyad :
+    <input type="text" id="tbFullName" />
+    <br />
+    <input type="button" id="bDelete" value='Sil' />
+    <input type="button" id="bSave" value='Sakla' />
+</body>
+</html>
