@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            // .css kullanımı :
+            // 1. Tekil değer atama: (Sonuç JQuery türündedir.)
+            // .css( cssÖzelliği, değer)
+            // .css("background", "blue")
+            // 2. Çoğul değer atama (Sonuç JQuery türündedir.)
+            // .css( cssÖzellikleriİçinNesne );
+            // .css({
+            //        background: "blue",
+            //        color: "white",
+            //        font: "12pt Comic Sans MS"
+            //    })
+            // 3. Değer Alma ( Sonuçta bir sabit değer alırız. )
+            // .css( cssÖzelliğini )
+            // .css("background")
+            
+            //        $("div:even")
+            //                .css("background", "blue")
+            //                .css("color", "white")
+            //                .css("font","12pt Comic Sans MS");
+            $("div:even")
+                .css({
+                    background: "blue",
+                    color: "white",
+                    font: "12pt Comic Sans MS"
+                });
+                var bg = $("div:first").css("background");
+            
+            $("#sYazi").html(bg);
+        });
+    </script>
+
+</head>
+<body>
+    <div>1. Sayı</div>
+    <div>2. Sayı</div>
+    <div>3. Sayı</div>
+    <div>4. Sayı</div>
+    <div>5. Sayı</div>
+    <div>6. Sayı</div>
+    <div>7. Sayı</div>
+    <div>8. Sayı</div>
+    <div>9. Sayı</div>
+    <div>10. Sayı</div>
+    <span id="sYazi"></span>
+</body>
+</html> 

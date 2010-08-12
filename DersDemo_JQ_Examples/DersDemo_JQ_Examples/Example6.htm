@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var satisNoktalarimiz = [
+            { ad: 'İzmir - Alsancak',
+                adres: 'Atatürk Cad.',
+                telefon: '0232 2548978'
+            },
+            { ad: 'İzmir - Konak',
+                adres: 'Gazi Bul.',
+                telefon: '0232 2397841'
+            },
+            { ad: 'İstanbul - Beşiktaş',
+                adres: 'Hürriyet Bul.',
+                telefon: '0212 4455778'
+            },
+            { ad: 'Ankara - Kızılay',
+                adres: 'Tunalı Hilmi Cad.',
+                telefon: '0312 4579124'
+            }
+        ];
+            $(function() {
+                var tr = $("<tr/>");
+                var td0 = $("<th/>");
+                var td1 = $("<th/>").html("Mağaza Adı");
+                var td2 = $("<th/>").html("Adres");
+                var td3 = $("<th/>").html("Telefon");
+
+                tr
+                .append(td0)
+                .append(td1)
+                .append(td2)
+                .append(td3);
+
+                $("#tSN").append(tr);
+
+                for (var i in satisNoktalarimiz) {
+                    var item = satisNoktalarimiz[i];
+                    //                $("#tSN").append(
+                    //                        "<tr>" +
+                    //                            "<td>" + item.ad + "</td>" +
+                    //                            "<td>" + item.adres + "</td>" +
+                    //                            "<td>" + item.telefon + "</td>" +
+                    //                        "</tr>");
+
+                    var tr = $("<tr/>");
+                    var td0 = $("<th/>").html(parseInt(i) + 1);
+                    var td1 = $("<td/>").html(item.ad);
+                    var td2 = $("<td/>").html(item.adres);
+                    var td3 = $("<td/>").html(item.telefon);
+
+                    tr
+                        .append(td0)
+                        .append(td1)
+                        .append(td2)
+                        .append(td3);
+
+                    $("#tSN").append(tr);
+
+
+                }
+
+                $("#tSN2")
+                        .append("<tr>" +
+                            "<th>Mağaza Adı</th>" +
+                        "</tr>")
+                        .append("<tr><th>Adres</th></tr>")
+                        .append("<tr><th>Telefon</th></tr>");
+
+                for (var i in satisNoktalarimiz) {
+                    var item = satisNoktalarimiz[i];
+                    var td1 = $("<td/>").html(item.ad);
+                    var td2 = $("<td/>").html(item.adres);
+                    var td3 = $("<td/>").html(item.telefon);
+
+                    $("#tSN2 tr:eq(0)").append(td1);
+                    $("#tSN2 tr:eq(1)").append(td2);
+                    $("#tSN2 tr:eq(2)").append(td3);
+                }
+            });
+    </script>
+
+</head>
+<body>
+    Satış Noktalarımız :
+    <table border="1" id="tSN">
+    </table>
+    <table border="1" id="tSN2">
+    </table>
+</body>
+</html>

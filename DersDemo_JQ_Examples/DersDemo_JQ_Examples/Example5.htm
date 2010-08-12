@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var satisNoktalarimiz = [
+            'İzmir - Alsancak',
+            'İzmir - Konak',
+            'İzmir - Karşıyaka',
+            'İzmir - Bornova',
+            'İstanbul - Beşiktaş',
+            'İstanbul - Sarıyer',
+            'İstanbul - Mecidiyeköy',
+            'İstanbul - Fatih',
+            'Ankara - Çankaya',
+            'Ankara - Kızılay'
+        ];
+        $(function() {
+            //for (var i = 0; i < satisNoktalarimiz.length; i++) {
+            for (var i in satisNoktalarimiz) {
+                $("#ul1").append( // içe ve sona eklemeyi sağlar
+                    "<li>" + satisNoktalarimiz[i] + "</li>");
+
+                $("#ddlSN").prepend( // içe ve başa eklemeyi sağlar
+                    "<option>" + satisNoktalarimiz[i] + "</option>");
+            }
+        });
+    </script>
+
+</head>
+<body>
+    Satış Noktalarımız :
+    <ul id="ul1">
+    </ul>
+    
+    Satış Noktalarımız :
+    <select id="ddlSN"></select>
+</body>
+</html>

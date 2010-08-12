@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#bEkle").click(function() {
+                // satır
+                var tr = $("<tr/>");
+
+                // 1. sütun
+                var td1 = $("<td/>");
+                var tbOgrenciNo =
+                    $("<input type=text id=tbOgrenciNo name=tbOgrenciNo />");
+                //tbOgrenciNo.css("border", "1px solid blue");
+                td1.append(tbOgrenciNo);
+
+                // 2. sütun
+                var td2 = $("<td/>");
+                var tbAdSoyad =
+                    $("<input type=text id=tbAdSoyad name=tbAdSoyad />");
+                td2.append(tbAdSoyad);
+
+                // 3. sütun
+                var td3 = $("<td/>");
+                var tbVize =
+                    $("<select id=tbVize name=tbVize />");
+                td3.append(tbVize);
+
+                // 4. sütun
+                var td4 = $("<td/>");
+                var tbFinal =
+                    $("<select id=tbFinal name=tbFinal />");
+                td4.append(tbFinal);
+
+                //                for (var i = 0; i <= 100; i++) {
+                //                    tbVize.append("<option>" + i + "</option>");
+                //                    tbFinal.append("<option>" + i + "</option>");
+                //                }
+                var a = $("#tbVize").html();
+                tbVize.html(a);
+                tbFinal.html(a);
+
+                // 5. sütun
+                var td5 = $("<td/>");
+                var tbSil =
+                    $("<input type=button id=tbSil name=tbSil class=bSil value=Sil />");
+                //                tbSil.click(function() {
+                //                    $(this).parent().parent().remove();
+                //                });
+                td5.append(tbSil);
+
+                tr
+                    .append(td1)
+                    .append(td2)
+                    .append(td3)
+                    .append(td4)
+                    .append(td5);
+
+
+                $("#tOgrenciler").append(tr);
+            });
+
+            $(".bSil").live("click", function() {
+                $(this).parent().parent().remove();
+            });
+
+            for (var i = 0; i <= 100; i++) {
+                $("#tbVize,#tbFinal").append(
+                    "<option>" + i + "</option>");
+
+            }
+        });
+    </script>
+
+</head>
+<body>
+    <table border="1" id="tOgrenciler">
+        <tr>
+            <th>
+                Öğrenci No
+            </th>
+            <th>
+                Ad ve Soyad
+            </th>
+            <th>
+                Vize
+            </th>
+            <th>
+                Final
+            </th>
+            <th>
+                <input type="button" value="Ekle" id="bEkle" />
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="tbOgrenciNo" name="tbOgrenciNo" />
+            </td>
+            <td>
+                <input type="text" id="tbAdSoyad" name="tbAdSoyad" />
+            </td>
+            <td>
+                <select id="tbVize" name="tbVize" />
+            </td>
+            <td>
+                <select id="tbFinal" name="tbFinal" />
+            </td>
+            <td>
+                <input type="button" value="Sil" id="bSil" class="bSil" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

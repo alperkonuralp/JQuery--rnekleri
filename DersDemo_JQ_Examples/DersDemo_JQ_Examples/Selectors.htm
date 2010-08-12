@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $(".a").css("font", "12pt Verdana");
+            $("div.a").css("font-size", "20pt"); // css yazımı
+            $("div.a").css("fontSize", "20pt"); // javascript yazımı
+            $("span.a").css("fontSize", "14pt"); // javascript yazımı
+            $("div span").css("fontWeight", "bold");
+            $("div b").css("fontWeight", "bold");
+            $("table tr:first").css("textDecoration", "underline overline line-through");
+            //$(".b").css("width", "150px");
+            $(".b").width(150);
+            //$(".c").css("width", "200px");
+            $(".c").width("200px");
+            $(".b:odd,.c:odd").css("background", "#dddddd");
+            //$(".b").css("textAlign", "center");
+            //$(".c").css("textAlign", "right");
+            $(".b").attr("align", "center");
+            $(".c").attr("align", "right");
+        });
+    </script>
+
+</head>
+<body>
+    <div class="a">
+        İlk satırımız.
+    </div>
+    <span class="a">İlk span'ımız</span>
+    <div>
+        yazıya başladık, <span>işlemler şunlar </span><b class="a">burasıda kalın yazı</b>
+    </div>
+    <table border="1">
+        <tr>
+            <td class="b">
+                1. Satır 1. Sütun
+            </td>
+            <td class="c">
+                1. Satır 2. Sütun
+            </td>
+        </tr>
+        <tr>
+            <td class="b">
+                2. Satır 1. Sütun
+            </td>
+            <td class="c">
+                2. Satır 2. Sütun
+            </td>
+        </tr>
+        <tr>
+            <td class="b">
+                3. Satır 1. Sütun
+            </td>
+            <td class="c">
+                3. Satır 2. Sütun
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
