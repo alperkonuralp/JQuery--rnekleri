@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $.get("fiyatlar.xml", function(data) {
+
+                $("Urunler Urun", data).each(function(i, item) {
+                    var item = $(item);
+                    var td1html = item.attr("UrunKodu");
+                    var td2html = item.children("UrunAdi").text();
+                    var td3html = item.children("BirimFiyati").text();
+                    var td4html = item.children("StokMiktari").text();
+                    var td5html = item.children("Resim").text();
+                    var td6html = parseFloat(td3html) * parseFloat(td4html);
+
+
+                    var td1 = $("<td/>").html(td1html);
+                    var td2 = $("<td/>").html(td2html);
+                    var td3 = $("<td/>").html(td3html).css("textAlign", "right");
+                    var td4 = $("<td/>").html(td4html).attr("align", "right");
+                    /*var td5 = $("<td/>");
+                    $("<img />").attr("src", td5html).attr("width", 100)
+                    .appendTo(td5);
+                    */
+                    var td5 = $("<td/>")
+                        .append('<img src="' + td5html + '" width=100 />');
+                    var td6 = $("<td align=right />").html(td6html);
+
+
+                    var tr = $("<tr/>")
+                        .append(td5)
+                        .append(td1)
+                        .append(td2)
+                        .append(td3)
+                        .append(td4)
+                        .append(td6);
+
+                    $("#tUrunler").append(tr);
+
+                });
+
+                if ($("#tUrunler tr").length > 0) {
+
+                    // header
+                    var td1 = $("<th/>").html("Ürün Kodu");
+                    var td2 = $("<th/>").html("Ürün Adı");
+                    var td3 = $("<th/>").html("Birim Fiyatı");
+                    var td4 = $("<th/>").html("Stok Adedi");
+                    var td5 = $("<th/>").html("Resim");
+                    var td6 = $("<th/>").html("Fiyat");
+
+                    var tr = $("<tr/>")
+                        .append(td5)
+                        .append(td1)
+                        .append(td2)
+                        .append(td3)
+                        .append(td4)
+                        .append(td6);
+
+                    $("#tUrunler").prepend(tr);
+
+                    // footer
+                    var toplam = 0;
+                    $("#tUrunler tr:gt(0) td:nth-child(6)")
+                        .each(function(i, item) {
+                            toplam += parseFloat($(item).html());
+                        });
+
+                    var td1 = $("<th colspan=5 align=right>Toplam : </th>");
+                    var td2 = $("<td style='text-align: right;' />").html(toplam);
+
+                    $("<tr />")
+                        .append(td1)
+                        .append(td2)
+                        .appendTo("#tUrunler");
+                }
+            }, "xml");
+        });
+    </script>
+
+</head>
+<body>
+    Ürünler:
+    <table id="tUrunler" border="1">
+    </table>
+</body>
+</html>

@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ajax Get Kullanarak istek yapma</title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#bText").click(function() {
+                $.get('yazi.txt', function(data) {
+                    $("#dIcerik").html("<pre>" + data + "</pre>");
+                }, 'text');
+            });
+
+            $("#bHtml").click(function() {
+                $.get('htmlyazi.htm', function(data) {
+                    $("#dIcerik").empty().append($(data).filter("p:gt(1)"));
+                }, 'html');
+            });
+
+
+
+
+
+            $("#bXml").click(function() {
+                $.get('MusteriData.xml', function(data) {
+                    var ul = $("<ul/>");
+                    $("Musteriler Musteri MusteriAdi", data)
+                        .each(function(i, item) {
+                            $("<li/>").html($(item).text() + ' ( ' + $(item).parent().children('Telefon').text() + ' ) ').appendTo(ul);
+                        });
+                    $("#dIcerik").empty().append(ul);
+                }, 'xml');
+            });
+
+
+
+
+            $("#bScript").click(function() {
+                $.get('JSVeriler.js', function(data) {
+                    var t = $("<table border=1 />");
+                    for (var i in window.JSVeriler) {
+                        var tr = $("<tr />").appendTo(t);
+                        for (var j in window.JSVeriler[i]) {
+                            $("<td>" + window.JSVeriler[i][j] + "</td>")
+                                .appendTo(tr);
+                        }
+                    }
+                    var tr = $("<tr />").prependTo(t);
+                    for (var j in window.JSVeriler[0]) {
+                        $("<th>" + j + "</th>")
+                                .appendTo(tr);
+                    }
+
+                    $("#dIcerik").empty().append(t);
+                }, 'script');
+            });
+            $("#bJson").click(function() {
+                $("#bJson").ajaxError(function(e, xhr, settings, exception) {
+                    alert(e);
+                });
+                $.get('JSONVeriler.js', function(data) {
+                    var t = $("<table border=1 />");
+                    for (var i in data) {
+                        var tr = $("<tr />").appendTo(t);
+                        for (var j in data[i]) {
+                            $("<td/>").html(data[i][j])
+                                .appendTo(tr);
+                        }
+                    }
+
+                    var tr = $("<tr/>").prependTo(t);
+                    for (var j in data[0]) {
+                        $("<th/>").html(j)
+                                .appendTo(tr);
+                    }
+
+                    $("#dIcerik").empty().append(t);
+                }, 'json');
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <input type="button" value='Text İste' id="bText" />
+    <input type="button" value="Html İste" id="bHtml" />
+    <input type="button" value="Xml İste" id="bXml" />
+    <input type="button" value="Script İste" id="bScript" />
+    <input type="button" value="JSON İste" id="bJson" />
+    <div id="dIcerik">
+    </div>
+</body>
+</html>

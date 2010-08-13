@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+
+            $.get("IlIlce.xml",
+                function(data) {
+                    window.Iller = new Array();
+                    $('Il', data).each(function(i, item) {
+                        var o = {
+                            PlakaKodu: $(item).attr("PlakaKodu"),
+                            IlAdi: $(item).attr("Adi"),
+                            Ilceler: new Array()
+                        };
+                        $('<option/>')
+                            .html(o.IlAdi)
+                            .val(o.PlakaKodu)
+                            .appendTo('#ddlIl');
+
+                        window.Iller[o.PlakaKodu] = o;
+
+                        $(item).children("Ilce").attr("Adi", function(j, item2) {
+                            o.Ilceler.push(item2);
+                        });
+                    });
+                    $('#ddlIl').prepend(
+                        '<option value=0>İl Seçiniz.</option>').val(0)
+                        .change(function() {
+                            var pk = $(this).val();
+                            $("#ddlIlce").empty();
+                            if (pk != 0) {
+                                for (var i in window.Iller[pk].Ilceler) {
+                                    $("<option/>")
+                                        .html(window.Iller[pk].Ilceler[i])
+                                        .appendTo("#ddlIlce");
+
+                                }
+                            }
+                        });
+                }, 'xml');
+        });
+    
+    </script>
+
+</head>
+<body>
+    İl :
+    <select id="ddlIl">
+    </select>
+    <br />
+    İlçe :
+    <select id="ddlIlce">
+    </select>
+</body>
+</html>

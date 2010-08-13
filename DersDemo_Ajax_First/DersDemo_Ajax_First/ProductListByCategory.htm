@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+
+            $.get("data.ashx", { t: 'categories' },
+                function(data) {
+                    $('Categories', data).each(function(i, item) {
+                        $('<option/>')
+                            .html($(item).children("CategoryName").text())
+                            .val($(item).children("CategoryID").text())
+                            .appendTo('#ddlCategories');
+                    });
+                    $('#ddlCategories').prepend(
+                        '<option value=0>Kategori Seçiniz.</option>').val(0);
+                }, 'xml');
+
+
+
+            $.get('data.ashx', { t: 'products' },
+            function(data) {
+                $("Products", data).each(function(i, item) {
+                    var item = $(item);
+                    if (i == 0) {
+                        $("<tr/>").append("<th>Product ID</th>")
+                        .append("<th>Product Name</th>")
+                        .append("<th>Category ID</th>")
+                        .append("<th>Quantity Per Unit</th>")
+                        .append("<th>Unit Price</th>")
+                        .append("<th>Units In Stock</th>")
+                        .appendTo("#tProducts");
+                    }
+                    $("<tr/>")
+                        .hide()
+                        .append("<td>" + item.children("ProductID").text() +
+                            "</td>")
+                        .append("<td>" +
+                            item.children("ProductName").text() +
+                            "</td>")
+                        .append("<td>" +
+                            item.children("CategoryID").text() +
+                            "</td>")
+                        .append("<td>" +
+                            item.children("QuantityPerUnit").text() +
+                            "</td>")
+                        .append("<td>" +
+                            item.children("UnitPrice").text() +
+                            "</td>")
+                        .append("<td>" +
+                            item.children("UnitsInStock").text() +
+                            "</td>")
+                        .appendTo("#tProducts");
+                });
+            }, 'xml');
+
+            $("#ddlCategories").change(function() {
+                var id = $(this).val();
+                $("#tProducts tr:not(:first)").hide();
+                if (id != 0) {
+                    $("#tProducts tr:not(:first) td:nth-child(3):contains(" + id + ")").parent().show();
+//                       
+                }
+            });
+        });
+    
+    </script>
+
+</head>
+<body>
+    Kategoriler :
+    <select id="ddlCategories">
+    </select>
+    <table id="tProducts">
+    </table>
+</body>
+</html>

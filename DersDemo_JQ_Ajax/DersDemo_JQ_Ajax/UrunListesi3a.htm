@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script src="jquery.xml2json.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $.get("fiyatlar.xml", function(data) {
+                var datas = $.xml2json(data);
+                for (var i in datas.Urun) {
+                
+                    var td1html = datas.Urun[i].UrunKodu;
+                    var td2html = datas.Urun[i].UrunAdi;
+                    var td3html = datas.Urun[i].BirimFiyati;
+                    var td4html = datas.Urun[i].StokMiktari;
+                    var td5html = datas.Urun[i].Resim;
+
+                    var td1 = $("<td/>").html(td1html);
+                    var td2 = $("<td/>").html(td2html);
+                    var td3 = $("<td/>").html(td3html);
+                    var td4 = $("<td/>").html(td4html);
+                    /*var td5 = $("<td/>");
+                    $("<img />").attr("src", td5html).attr("width", 100)
+                    .appendTo(td5);
+                    */
+                    var td5 = $("<td/>")
+                        .append('<img src="' + td5html + '" width=100 />');
+
+
+                    var tr = $("<tr/>")
+                        .append(td1)
+                        .append(td2)
+                        .append(td3)
+                        .append(td4)
+                        .append(td5);
+
+                    $("#tUrunler").append(tr);
+                }
+            }, "xml");
+        });
+    </script>
+
+</head>
+<body>
+    Ürünler:
+    <table id="tUrunler" border="1">
+    </table>
+</body>
+</html>

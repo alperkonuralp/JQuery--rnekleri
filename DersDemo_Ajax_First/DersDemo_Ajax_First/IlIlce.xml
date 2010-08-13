@@ -1,0 +1,1101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Iller>
+    <Il PlakaKodu="1" Adi="ADANA">
+        <Ilce Adi="ADANA MERKEZ"/>
+        <Ilce Adi="CEYHAN"/>
+        <Ilce Adi="FEKE"/>
+        <Ilce Adi="KADİRLİ"/>
+        <Ilce Adi="KARAİSALI"/>
+        <Ilce Adi="KARATAŞ"/>
+        <Ilce Adi="KOZAN"/>
+        <Ilce Adi="OSMANİYE"/>
+        <Ilce Adi="POZANTI"/>
+        <Ilce Adi="SAİMBEYLİ"/>
+        <Ilce Adi="TUFANBEYLİ"/>
+        <Ilce Adi="YUMURTALIK"/>
+        <Ilce Adi="DÜZİÇİ"/>
+        <Ilce Adi="YÜREĞİR"/>
+        <Ilce Adi="ALADAĞ"/>
+        <Ilce Adi="İMAMOĞLU"/>
+        <Ilce Adi="SEYHAN"/>
+        <Ilce Adi="BAHÇE"/>
+    </Il>
+    <Il PlakaKodu="2" Adi="ADIYAMAN">
+        <Ilce Adi="ADIYAMAN MERK."/>
+        <Ilce Adi="BESNİ"/>
+        <Ilce Adi="ÇELİKHAN"/>
+        <Ilce Adi="GERGER"/>
+        <Ilce Adi="GÖLBAŞI"/>
+        <Ilce Adi="KAHTA"/>
+        <Ilce Adi="SAMSAT"/>
+        <Ilce Adi="SİNCİK"/>
+        <Ilce Adi="TUT"/>
+    </Il>
+    <Il PlakaKodu="3" Adi="AFYON">
+        <Ilce Adi="AFYON MERKEZ"/>
+        <Ilce Adi="BOLVADİN"/>
+        <Ilce Adi="ÇAY"/>
+        <Ilce Adi="DAZKIRI"/>
+        <Ilce Adi="EMİRDAĞ"/>
+        <Ilce Adi="İHSANİYE"/>
+        <Ilce Adi="SANDIKLI"/>
+        <Ilce Adi="SULTANDAĞI"/>
+        <Ilce Adi="ŞUHUT"/>
+        <Ilce Adi="DİNAR"/>
+        <Ilce Adi="BAŞMAKÇI"/>
+        <Ilce Adi="BAYAT"/>
+        <Ilce Adi="İSÇEHİSAR"/>
+        <Ilce Adi="SİNANPAŞA-SİNCANLI"/>
+        <Ilce Adi="ÇOBANLAR"/>
+        <Ilce Adi="EVCİLER"/>
+        <Ilce Adi="HOCALAR"/>
+        <Ilce Adi="KIZILÖREN"/>
+    </Il>
+    <Il PlakaKodu="4" Adi="AĞRI">
+        <Ilce Adi="AĞRI MERKEZ"/>
+        <Ilce Adi="DİYADİN"/>
+        <Ilce Adi="DOĞUBEYAZIT"/>
+        <Ilce Adi="ELEŞKİRT"/>
+        <Ilce Adi="HAMUR"/>
+        <Ilce Adi="PATNOS"/>
+        <Ilce Adi="TAŞLIÇAY"/>
+        <Ilce Adi="TUTAK"/>
+    </Il>
+    <Il PlakaKodu="5" Adi="AMASYA">
+        <Ilce Adi="AMASYA MERKEZ"/>
+        <Ilce Adi="GÖYNÜCEK"/>
+        <Ilce Adi="GÜMÜŞHACIKÖY"/>
+        <Ilce Adi="MERZİFON"/>
+        <Ilce Adi="SULUOVA"/>
+        <Ilce Adi="TAŞOVA"/>
+        <Ilce Adi="HAMAMÖZÜ"/>
+    </Il>
+    <Il PlakaKodu="6" Adi="ANKARA">
+        <Ilce Adi="ANKARA MERKEZ"/>
+        <Ilce Adi="ALTINDAĞ"/>
+        <Ilce Adi="AYAŞ"/>
+        <Ilce Adi="BALA"/>
+        <Ilce Adi="BEYPAZARI"/>
+        <Ilce Adi="ÇANKAYA"/>
+        <Ilce Adi="ÇAMLIDERE"/>
+        <Ilce Adi="ÇUBUK"/>
+        <Ilce Adi="ELMADAĞ"/>
+        <Ilce Adi="GÜDÜL"/>
+        <Ilce Adi="HAYMANA"/>
+        <Ilce Adi="KALECİK"/>
+        <Ilce Adi="K.HAMAM"/>
+        <Ilce Adi="ŞEREFLİKOÇHİSAR"/>
+        <Ilce Adi="NALLIHAN"/>
+        <Ilce Adi="POLATLI"/>
+        <Ilce Adi="GÖLBAŞI"/>
+        <Ilce Adi="KEÇİÖREN"/>
+        <Ilce Adi="MAMAK"/>
+        <Ilce Adi="SİNCAN"/>
+        <Ilce Adi="YENİMAHALLE"/>
+        <Ilce Adi="KAZAN"/>
+        <Ilce Adi="AKYURT"/>
+        <Ilce Adi="ETİMESGUT"/>
+        <Ilce Adi="EVREN"/>
+    </Il>
+    <Il PlakaKodu="7" Adi="ANTALYA">
+        <Ilce Adi="ANTALYA MERKEZ"/>
+        <Ilce Adi="AKSEKİ"/>
+        <Ilce Adi="ALANYA"/>
+        <Ilce Adi="ELMALI"/>
+        <Ilce Adi="FİNİKE"/>
+        <Ilce Adi="GAZİPAŞA"/>
+        <Ilce Adi="GÜNDOĞMUŞ"/>
+        <Ilce Adi="KAŞ"/>
+        <Ilce Adi="KORKUTELİ"/>
+        <Ilce Adi="KUMLUCA"/>
+        <Ilce Adi="MANAVGAT"/>
+        <Ilce Adi="SERİK"/>
+        <Ilce Adi="KALE"/>
+        <Ilce Adi="İBRADI"/>
+        <Ilce Adi="KEMER"/>
+    </Il>
+    <Il PlakaKodu="8" Adi="ARTVİN">
+        <Ilce Adi="ARTVİN MERKEZ"/>
+        <Ilce Adi="ARDANUÇ"/>
+        <Ilce Adi="ARHAVİ"/>
+        <Ilce Adi="BORÇKA"/>
+        <Ilce Adi="HOPA"/>
+        <Ilce Adi="ŞAVŞAT"/>
+        <Ilce Adi="YUSUFELİ"/>
+        <Ilce Adi="GÖKTAŞ-MURGUL"/>
+    </Il>
+    <Il PlakaKodu="9" Adi="AYDIN">
+        <Ilce Adi="AYDIN MERKEZ"/>
+        <Ilce Adi="BOZDOĞAN"/>
+        <Ilce Adi="ÇİNE"/>
+        <Ilce Adi="GERMENCİK"/>
+        <Ilce Adi="KARACASU"/>
+        <Ilce Adi="KOÇARLI"/>
+        <Ilce Adi="KUŞADASI"/>
+        <Ilce Adi="KUYUCAK"/>
+        <Ilce Adi="NAZİLLİ"/>
+        <Ilce Adi="SÖKE"/>
+        <Ilce Adi="SULTANHİSAR"/>
+        <Ilce Adi="YENİPAZAR"/>
+        <Ilce Adi="BUHARKENT"/>
+        <Ilce Adi="İNCİRLİOVA"/>
+        <Ilce Adi="KARPUZLU"/>
+        <Ilce Adi="KÖŞK"/>
+        <Ilce Adi="YENİHİSAR"/>
+    </Il>
+    <Il PlakaKodu="10" Adi="BALIKESİR">
+        <Ilce Adi="BALIKESİR MERKEZ"/>
+        <Ilce Adi="AYVALIK"/>
+        <Ilce Adi="BALYA"/>
+        <Ilce Adi="BANDIRMA"/>
+        <Ilce Adi="BİGADİÇ"/>
+        <Ilce Adi="BURHANİYE"/>
+        <Ilce Adi="DURSUNBEY"/>
+        <Ilce Adi="EDREMİT"/>
+        <Ilce Adi="ERDEK"/>
+        <Ilce Adi="GÖNEN"/>
+        <Ilce Adi="HAVRAN"/>
+        <Ilce Adi="İVRİNDİ"/>
+        <Ilce Adi="KEPSUT"/>
+        <Ilce Adi="MANYAS"/>
+        <Ilce Adi="SAVAŞTEPE"/>
+        <Ilce Adi="SINDIRGI"/>
+        <Ilce Adi="SUSURLUK"/>
+        <Ilce Adi="MARMARA"/>
+        <Ilce Adi="GÖMEÇ"/>
+    </Il>
+    <Il PlakaKodu="11" Adi="BİLECİK">
+        <Ilce Adi="BİLECİK MERKEZ"/>
+        <Ilce Adi="BOZÜYÜK"/>
+        <Ilce Adi="GÖLPAZARI"/>
+        <Ilce Adi="OSMANELİ"/>
+        <Ilce Adi="PAZARYERİ"/>
+        <Ilce Adi="SÖĞÜT"/>
+        <Ilce Adi="YENİPAZAR"/>
+        <Ilce Adi="İNHİSAR"/>
+    </Il>
+    <Il PlakaKodu="12" Adi="BİNGÖL">
+        <Ilce Adi="BİNGÖL MERKEZ"/>
+        <Ilce Adi="GENÇ"/>
+        <Ilce Adi="KARLIOVA"/>
+        <Ilce Adi="KIĞI"/>
+        <Ilce Adi="SOLHAN"/>
+        <Ilce Adi="ADAKLI"/>
+        <Ilce Adi="YAYLADERE"/>
+        <Ilce Adi="YEDİSU"/>
+    </Il>
+    <Il PlakaKodu="13" Adi="BİTLİS">
+        <Ilce Adi="BİTLİS MERKEZ"/>
+        <Ilce Adi="ADİLCEVAZ"/>
+        <Ilce Adi="AHLAT"/>
+        <Ilce Adi="HİZAN"/>
+        <Ilce Adi="MUTKİ"/>
+        <Ilce Adi="TATVAN"/>
+        <Ilce Adi="GÜROYMAK"/>
+    </Il>
+    <Il PlakaKodu="14" Adi="BOLU">
+        <Ilce Adi="BOLU MERKEZ"/>
+        <Ilce Adi="AKÇAKOCA"/>
+        <Ilce Adi="DÜZCE"/>
+        <Ilce Adi="GEREDE"/>
+        <Ilce Adi="GÖYNÜK"/>
+        <Ilce Adi="KIBRISÇIK"/>
+        <Ilce Adi="MENGEN"/>
+        <Ilce Adi="MUDURNU"/>
+        <Ilce Adi="SEBEN"/>
+        <Ilce Adi="YIĞILCA"/>
+        <Ilce Adi="GÖLYAKA"/>
+        <Ilce Adi="CUMAOVA"/>
+        <Ilce Adi="ÇİLİMLİ"/>
+        <Ilce Adi="DÖRTDİVAN"/>
+        <Ilce Adi="YENİÇAĞA"/>
+    </Il>
+    <Il PlakaKodu="15" Adi="BURDUR">
+        <Ilce Adi="BURDUR MERKEZ"/>
+        <Ilce Adi="AĞLASUN"/>
+        <Ilce Adi="BUCAK"/>
+        <Ilce Adi="GÖLHİSAR"/>
+        <Ilce Adi="TEFENNİ"/>
+        <Ilce Adi="YEŞİLOVA"/>
+        <Ilce Adi="KARAMANLI"/>
+        <Ilce Adi="KEMER"/>
+        <Ilce Adi="ALTINYAYLA"/>
+        <Ilce Adi="ÇAVDIR"/>
+        <Ilce Adi="ÇELTİKÇİ"/>
+    </Il>
+    <Il PlakaKodu="16" Adi="BURSA">
+        <Ilce Adi="BURSA MERKEZ"/>
+        <Ilce Adi="GEMLİK"/>
+        <Ilce Adi="İNEGÖL"/>
+        <Ilce Adi="İZNİK"/>
+        <Ilce Adi="KARACABEY"/>
+        <Ilce Adi="KELES"/>
+        <Ilce Adi="M.KEMALPAŞA"/>
+        <Ilce Adi="MUDANYA"/>
+        <Ilce Adi="ORHANELİ"/>
+        <Ilce Adi="ORHANGAZI"/>
+        <Ilce Adi="YENİŞEHİR"/>
+        <Ilce Adi="NİLÜFER"/>
+        <Ilce Adi="OSMANGAZİ"/>
+        <Ilce Adi="YILDIRIM"/>
+        <Ilce Adi="BÜYÜKORHAN"/>
+        <Ilce Adi="HARMANCIK"/>
+        <Ilce Adi="GÜRSU"/>
+        <Ilce Adi="KESTEL"/>
+    </Il>
+    <Il PlakaKodu="17" Adi="ÇANAKKALE">
+        <Ilce Adi="ÇANAKKALE MERKE"/>
+        <Ilce Adi="AYVALIK"/>
+        <Ilce Adi="BAYRAMİÇ"/>
+        <Ilce Adi="BİGA"/>
+        <Ilce Adi="BOZCAADA"/>
+        <Ilce Adi="ÇAN"/>
+        <Ilce Adi="ECEABAT"/>
+        <Ilce Adi="EZİNE"/>
+        <Ilce Adi="GELİBOLU"/>
+        <Ilce Adi="GÖKÇEADA"/>
+        <Ilce Adi="LAPSEKİ"/>
+        <Ilce Adi="YENİCE"/>
+    </Il>
+    <Il PlakaKodu="18" Adi="ÇANKIRI">
+        <Ilce Adi="ÇANKIRI MERKEZ"/>
+        <Ilce Adi="ÇERKEŞ"/>
+        <Ilce Adi="ELDİVAN"/>
+        <Ilce Adi="ILGAZ"/>
+        <Ilce Adi="KURŞUNLU"/>
+        <Ilce Adi="ORTA"/>
+        <Ilce Adi="ŞABANÖZÜ"/>
+        <Ilce Adi="YAPRAKLI"/>
+        <Ilce Adi="KIZILIRMAK"/>
+        <Ilce Adi="ATKARACALAR"/>
+        <Ilce Adi="BAYRAMÖREN"/>
+        <Ilce Adi="KORGUN"/>
+    </Il>
+    <Il PlakaKodu="19" Adi="ÇORUM">
+        <Ilce Adi="ÇORUM MERKEZ"/>
+        <Ilce Adi="ALACA"/>
+        <Ilce Adi="BAYAT"/>
+        <Ilce Adi="İSKİLİP"/>
+        <Ilce Adi="KARGI"/>
+        <Ilce Adi="MECİTÖZÜ"/>
+        <Ilce Adi="ORTAKÖY"/>
+        <Ilce Adi="OSMANCIK"/>
+        <Ilce Adi="SUNGURLU"/>
+        <Ilce Adi="BOĞAZKALE"/>
+        <Ilce Adi="UĞURLUDAĞ"/>
+        <Ilce Adi="OĞUZLAR"/>
+        <Ilce Adi="DODURGA"/>
+        <Ilce Adi="LAÇİN"/>
+    </Il>
+    <Il PlakaKodu="20" Adi="DENİZLİ">
+        <Ilce Adi="DENİZLİ MERKEZ"/>
+        <Ilce Adi="ACIPAYAM"/>
+        <Ilce Adi="BULDAN"/>
+        <Ilce Adi="ÇAL"/>
+        <Ilce Adi="ÇAMELİ"/>
+        <Ilce Adi="ÇARDAK"/>
+        <Ilce Adi="ÇİVRİL"/>
+        <Ilce Adi="GÜNEY"/>
+        <Ilce Adi="KALE"/>
+        <Ilce Adi="SARAYKÖY"/>
+        <Ilce Adi="TAVAS"/>
+        <Ilce Adi="BABADAĞ"/>
+        <Ilce Adi="BEKİLLİ"/>
+        <Ilce Adi="HONAZ"/>
+        <Ilce Adi="SERİNHİSAR"/>
+        <Ilce Adi="AKKÖY"/>
+        <Ilce Adi="BAKLAN"/>
+        <Ilce Adi="BEYAĞAÇ"/>
+        <Ilce Adi="BOZKURT"/>
+    </Il>
+    <Il PlakaKodu="21" Adi="DİYARBAKIR">
+        <Ilce Adi="DİYARBAKIR MERK"/>
+        <Ilce Adi="BİSMİL"/>
+        <Ilce Adi="ÇERMİK"/>
+        <Ilce Adi="ÇINAR"/>
+        <Ilce Adi="ÇÜNGÜŞ"/>
+        <Ilce Adi="DİCLE"/>
+        <Ilce Adi="ERGANİ"/>
+        <Ilce Adi="HANİ"/>
+        <Ilce Adi="HAZRO"/>
+        <Ilce Adi="KULP"/>
+        <Ilce Adi="LİCE"/>
+        <Ilce Adi="SİLVAN"/>
+        <Ilce Adi="EĞİL"/>
+        <Ilce Adi="KOCAKÖY"/>
+    </Il>
+    <Il PlakaKodu="22" Adi="EDİRNE">
+        <Ilce Adi="EDİRNE MERKEZ"/>
+        <Ilce Adi="ENEZ"/>
+        <Ilce Adi="HAVSA"/>
+        <Ilce Adi="İPSALA"/>
+        <Ilce Adi="KEŞAN"/>
+        <Ilce Adi="LALAPAŞA"/>
+        <Ilce Adi="MERİÇ"/>
+        <Ilce Adi="UZUNKÖPRÜ"/>
+        <Ilce Adi="SÜLEOĞLU"/>
+    </Il>
+    <Il PlakaKodu="23" Adi="ELAZIĞ">
+        <Ilce Adi="ELAZIĞ MERKEZ"/>
+        <Ilce Adi="AĞIN"/>
+        <Ilce Adi="BASKİL"/>
+        <Ilce Adi="KARAKOÇAN"/>
+        <Ilce Adi="KEBAN"/>
+        <Ilce Adi="MADEN"/>
+        <Ilce Adi="PALU"/>
+        <Ilce Adi="SİVRİCE"/>
+        <Ilce Adi="ARICAK"/>
+        <Ilce Adi="KOVANCILAR"/>
+        <Ilce Adi="ALACAKAYA"/>
+    </Il>
+    <Il PlakaKodu="24" Adi="ERZİNCAN">
+        <Ilce Adi="ERZİNCAN MERKEZ"/>
+        <Ilce Adi="ÇAYIRLI"/>
+        <Ilce Adi="İLİÇ"/>
+        <Ilce Adi="KEMAH"/>
+        <Ilce Adi="KEMALİYE"/>
+        <Ilce Adi="REFAHİYE"/>
+        <Ilce Adi="TERCAN"/>
+        <Ilce Adi="ÜZÜMLÜ"/>
+        <Ilce Adi="OTLUKBELİ"/>
+    </Il>
+    <Il PlakaKodu="25" Adi="ERZURUM">
+        <Ilce Adi="ERZURUM MERKEZ"/>
+        <Ilce Adi="AŞKALE"/>
+        <Ilce Adi="ÇAT"/>
+        <Ilce Adi="HINIS"/>
+        <Ilce Adi="HORASAN"/>
+        <Ilce Adi="İSPİR"/>
+        <Ilce Adi="KARAYAZI"/>
+        <Ilce Adi="NARMAN"/>
+        <Ilce Adi="OLTU"/>
+        <Ilce Adi="OLUR"/>
+        <Ilce Adi="PASİNLER"/>
+        <Ilce Adi="ŞENKAYA"/>
+        <Ilce Adi="TEKMAN"/>
+        <Ilce Adi="TORTUM"/>
+        <Ilce Adi="KARAÇOBAN"/>
+        <Ilce Adi="UZUNDERE"/>
+        <Ilce Adi="PAZARYOLU"/>
+        <Ilce Adi="ILICA"/>
+        <Ilce Adi="KÖPRÜKÖY"/>
+    </Il>
+    <Il PlakaKodu="26" Adi="ESKİŞEHİR">
+        <Ilce Adi="ESKİŞEHİR MERKEZ"/>
+        <Ilce Adi="ÇİFTELER"/>
+        <Ilce Adi="MAHMUDİYE"/>
+        <Ilce Adi="MİHALIÇÇIK"/>
+        <Ilce Adi="SARICAKAYA"/>
+        <Ilce Adi="SEYİTGAZİ"/>
+        <Ilce Adi="SİVRİHİSAR"/>
+        <Ilce Adi="PORSUK"/>
+        <Ilce Adi="ALPU"/>
+        <Ilce Adi="BEYLİKOVA"/>
+        <Ilce Adi="İNÖNÜ"/>
+        <Ilce Adi="GÜNYÜZÜ"/>
+        <Ilce Adi="HAN"/>
+        <Ilce Adi="MİHALGAZİ"/>
+    </Il>
+    <Il PlakaKodu="27" Adi="GAZİANTEP">
+        <Ilce Adi="G.ANTEP MERKEZ"/>
+        <Ilce Adi="ARABAN"/>
+        <Ilce Adi="ISLAHİYE"/>
+        <Ilce Adi="NİZİP"/>
+        <Ilce Adi="OĞUZELİ"/>
+        <Ilce Adi="YAVUZELİ"/>
+        <Ilce Adi="ŞEHİTKAMİL"/>
+        <Ilce Adi="ŞAHİNBEY"/>
+        <Ilce Adi="KARKAMIŞ"/>
+        <Ilce Adi="NURDAĞI"/>
+    </Il>
+    <Il PlakaKodu="28" Adi="GİRESUN">
+        <Ilce Adi="GİRESUN MERKEZ"/>
+        <Ilce Adi="ALUCRA"/>
+        <Ilce Adi="BULANCAK"/>
+        <Ilce Adi="DERELİ"/>
+        <Ilce Adi="ESPİYE"/>
+        <Ilce Adi="EYNESİL"/>
+        <Ilce Adi="GÖRELE"/>
+        <Ilce Adi="KEŞAP"/>
+        <Ilce Adi="Ş.KARAHİSAR"/>
+        <Ilce Adi="TİREBOLU"/>
+        <Ilce Adi="PİRAZİZ"/>
+        <Ilce Adi="YAĞLIDERE"/>
+        <Ilce Adi="ÇANAKÇI"/>
+        <Ilce Adi="ÇAMOLUK"/>
+        <Ilce Adi="DOĞANKENT"/>
+        <Ilce Adi="GÜCE"/>
+    </Il>
+    <Il PlakaKodu="29" Adi="GÜMÜŞHANE">
+        <Ilce Adi="GÜMÜŞHANE MERK"/>
+        <Ilce Adi="KELKİT"/>
+        <Ilce Adi="ŞİRAN"/>
+        <Ilce Adi="TORUL"/>
+        <Ilce Adi="KÖSE"/>
+        <Ilce Adi="KÜRTÜN"/>
+    </Il>
+    <Il PlakaKodu="30" Adi="HAKKARİ">
+        <Ilce Adi="HAKKARİ MERKEZ"/>
+        <Ilce Adi="ÇUKURCA"/>
+        <Ilce Adi="ŞEMDİNLİ"/>
+        <Ilce Adi="YÜKSEKOVA"/>
+    </Il>
+    <Il PlakaKodu="31" Adi="HATAY">
+        <Ilce Adi="ANTAKYA MERKEZ"/>
+        <Ilce Adi="ALTINÖZÜ"/>
+        <Ilce Adi="DÖRTYOL"/>
+        <Ilce Adi="HASSA"/>
+        <Ilce Adi="İSKENDERUN"/>
+        <Ilce Adi="KIRIKHAN"/>
+        <Ilce Adi="REYHANLI"/>
+        <Ilce Adi="SAMANDAĞI"/>
+        <Ilce Adi="YAYLADAĞI"/>
+        <Ilce Adi="ERZİN"/>
+        <Ilce Adi="BELEN"/>
+        <Ilce Adi="KUMLU"/>
+    </Il>
+    <Il PlakaKodu="32" Adi="ISPARTA">
+        <Ilce Adi="ISPARTA MERKEZ"/>
+        <Ilce Adi="ATABEY"/>
+        <Ilce Adi="EĞİRDİR"/>
+        <Ilce Adi="GELENDOST"/>
+        <Ilce Adi="KEÇİBORLU"/>
+        <Ilce Adi="SENİRKENT"/>
+        <Ilce Adi="SÜTÇÜLER"/>
+        <Ilce Adi="Ş.KARAAĞAÇ"/>
+        <Ilce Adi="ULUBORLU"/>
+        <Ilce Adi="YALVAÇ"/>
+        <Ilce Adi="AKSU"/>
+        <Ilce Adi="GÖNEN"/>
+        <Ilce Adi="Y.BADEMLİ"/>
+    </Il>
+    <Il PlakaKodu="33" Adi="İÇEL">
+        <Ilce Adi="MERSİN MERKEZ"/>
+        <Ilce Adi="ANAMUR"/>
+        <Ilce Adi="ERDEMLİ"/>
+        <Ilce Adi="GÜLNAR"/>
+        <Ilce Adi="MUT"/>
+        <Ilce Adi="SİLİFKE"/>
+        <Ilce Adi="TARSUS"/>
+        <Ilce Adi="BOZYAZI"/>
+        <Ilce Adi="AYDINCIK"/>
+        <Ilce Adi="ÇAMLIYAYLA"/>
+    </Il>
+    <Il PlakaKodu="34" Adi="İSTANBUL">
+        <Ilce Adi="İSTANBUL MERKEZ"/>
+        <Ilce Adi="ADALAR"/>
+        <Ilce Adi="BAKIRKÖY"/>
+        <Ilce Adi="BEŞİKTAŞ"/>
+        <Ilce Adi="BEYKOZ"/>
+        <Ilce Adi="BEYOĞLU"/>
+        <Ilce Adi="ÇATALCA"/>
+        <Ilce Adi="EMİNÖNÜ"/>
+        <Ilce Adi="EYÜP"/>
+        <Ilce Adi="FATİH"/>
+        <Ilce Adi="G.OSMANPAŞA"/>
+        <Ilce Adi="KADIKÖY"/>
+        <Ilce Adi="KARTAL"/>
+        <Ilce Adi="SARIYER"/>
+        <Ilce Adi="SİLİVRİ"/>
+        <Ilce Adi="ŞİLE"/>
+        <Ilce Adi="ŞİŞLİ"/>
+        <Ilce Adi="ÜSKÜDAR"/>
+        <Ilce Adi="ZEYTİNBURNU"/>
+        <Ilce Adi="B.ÇEKMECE"/>
+        <Ilce Adi="KAĞITHANE"/>
+        <Ilce Adi="K.ÇEKMECE"/>
+        <Ilce Adi="PENDİK"/>
+        <Ilce Adi="ÜMRANİYE"/>
+        <Ilce Adi="BAYRAMPAŞA"/>
+        <Ilce Adi="AVCILAR"/>
+        <Ilce Adi="BAĞCILAR"/>
+        <Ilce Adi="BAHÇELİEVLER"/>
+        <Ilce Adi="GÜNGÖREN"/>
+        <Ilce Adi="MALTEPE"/>
+        <Ilce Adi="SULTANBEYLİ"/>
+        <Ilce Adi="TUZLA"/>
+    </Il>
+    <Il PlakaKodu="35" Adi="İZMİR">
+        <Ilce Adi="İZMİR MERKEZ"/>
+        <Ilce Adi="BAYINDIR"/>
+        <Ilce Adi="BERGAMA"/>
+        <Ilce Adi="BORNOVA"/>
+        <Ilce Adi="ÇEŞME"/>
+        <Ilce Adi="DİKİLİ"/>
+        <Ilce Adi="FOÇA"/>
+        <Ilce Adi="KARABURUN"/>
+        <Ilce Adi="KARŞIYAKA"/>
+        <Ilce Adi="KEMALPAŞA"/>
+        <Ilce Adi="KINIK"/>
+        <Ilce Adi="KİRAZ"/>
+        <Ilce Adi="MENEMEN"/>
+        <Ilce Adi="ÖDEMİŞ"/>
+        <Ilce Adi="SEFERİHİSAR"/>
+        <Ilce Adi="SELÇUK"/>
+        <Ilce Adi="TİRE"/>
+        <Ilce Adi="TORBALI"/>
+        <Ilce Adi="URLA"/>
+        <Ilce Adi="ALİAĞA"/>
+        <Ilce Adi="BEYDAĞ"/>
+        <Ilce Adi="BUCA"/>
+        <Ilce Adi="KONAK"/>
+        <Ilce Adi="MENDERES"/>
+    </Il>
+    <Il PlakaKodu="36" Adi="KARS">
+        <Ilce Adi="KARS MERKEZ"/>
+        <Ilce Adi="ARPAÇAY"/>
+        <Ilce Adi="DİGOR"/>
+        <Ilce Adi="KAĞIZMAN"/>
+        <Ilce Adi="SARIKAMIŞ"/>
+        <Ilce Adi="SELİM"/>
+        <Ilce Adi="SUSUZ"/>
+        <Ilce Adi="AKYAKA"/>
+    </Il>
+    <Il PlakaKodu="37" Adi="KASTOMONU">
+        <Ilce Adi="KASTAMONU MERK"/>
+        <Ilce Adi="ARAÇ"/>
+        <Ilce Adi="AZDAVAY"/>
+        <Ilce Adi="BOZKURT"/>
+        <Ilce Adi="CİDE"/>
+        <Ilce Adi="ÇATALZEYTİN"/>
+        <Ilce Adi="DADAY"/>
+        <Ilce Adi="DEVREKHANE"/>
+        <Ilce Adi="İNEBOLU"/>
+        <Ilce Adi="KÜRE"/>
+        <Ilce Adi="TAŞKÖPRÜ"/>
+        <Ilce Adi="TOSYA"/>
+        <Ilce Adi="ABANA"/>
+        <Ilce Adi="İHSANGAZİ"/>
+        <Ilce Adi="PINARBAŞI"/>
+        <Ilce Adi="ŞENPAZAR"/>
+        <Ilce Adi="AĞILI"/>
+        <Ilce Adi="DOĞANYURT"/>
+        <Ilce Adi="HANÖNÜ"/>
+        <Ilce Adi="SEYDİLER"/>
+    </Il>
+    <Il PlakaKodu="38" Adi="KAYSERİ">
+        <Ilce Adi="KAYSERİ MERKEZ"/>
+        <Ilce Adi="BÜNYAN"/>
+        <Ilce Adi="DEVELİ"/>
+        <Ilce Adi="FELAHİYE"/>
+        <Ilce Adi="İNCESU"/>
+        <Ilce Adi="PINARBAŞI"/>
+        <Ilce Adi="SARIOĞLAN"/>
+        <Ilce Adi="SARIZ"/>
+        <Ilce Adi="TOMARZA"/>
+        <Ilce Adi="YAHYALI"/>
+        <Ilce Adi="YEŞİLHİSAR"/>
+        <Ilce Adi="TALAS"/>
+        <Ilce Adi="AKKIŞLA"/>
+        <Ilce Adi="KOCASİNAN"/>
+        <Ilce Adi="MELİKGAZİ"/>
+        <Ilce Adi="HACILAR"/>
+        <Ilce Adi="ÖZVATAN"/>
+    </Il>
+    <Il PlakaKodu="39" Adi="KIRKLARELİ">
+        <Ilce Adi="KIRKLARELİ MERK"/>
+        <Ilce Adi="BABAESKİ"/>
+        <Ilce Adi="DEMİRKÖY"/>
+        <Ilce Adi="KOFCAZ"/>
+        <Ilce Adi="LÜLEBURGAZ"/>
+        <Ilce Adi="PEHLİVANKÖY"/>
+        <Ilce Adi="PINARHİSAR"/>
+        <Ilce Adi="VİZE"/>
+    </Il>
+    <Il PlakaKodu="40" Adi="KIRŞEHİR">
+        <Ilce Adi="KIRŞEHİR MERKEZ"/>
+        <Ilce Adi="ÇİÇEKDAĞI"/>
+        <Ilce Adi="KAMAN"/>
+        <Ilce Adi="MUCUR"/>
+        <Ilce Adi="AKPINAR"/>
+        <Ilce Adi="AKÇAKENT"/>
+        <Ilce Adi="BOZTEPE"/>
+    </Il>
+    <Il PlakaKodu="41" Adi="KOCAELİ">
+        <Ilce Adi="İZMİT MERKEZ"/>
+        <Ilce Adi="GEBZE"/>
+        <Ilce Adi="GÖLCÜK"/>
+        <Ilce Adi="KANDIRA"/>
+        <Ilce Adi="KARAMÜRSEL"/>
+        <Ilce Adi="KÖRFEZ"/>
+    </Il>
+    <Il PlakaKodu="42" Adi="KONYA">
+        <Ilce Adi="KONYA MERKEZ"/>
+        <Ilce Adi="AKŞEHİR"/>
+        <Ilce Adi="BEYŞEHİR"/>
+        <Ilce Adi="BOZKIR"/>
+        <Ilce Adi="CİHANBEYLİ"/>
+        <Ilce Adi="ÇUMRA"/>
+        <Ilce Adi="DOĞANHİSAR"/>
+        <Ilce Adi="EREĞLİ"/>
+        <Ilce Adi="HADIM"/>
+        <Ilce Adi="ILGIN"/>
+        <Ilce Adi="KADINHANI"/>
+        <Ilce Adi="KARAPINAR"/>
+        <Ilce Adi="KULU"/>
+        <Ilce Adi="SARAYÖNÜ"/>
+        <Ilce Adi="SEYDİŞEHİR"/>
+        <Ilce Adi="YUNAK"/>
+        <Ilce Adi="MERAM"/>
+        <Ilce Adi="KARATAY"/>
+        <Ilce Adi="SELÇUKLU"/>
+        <Ilce Adi="AKÖREN"/>
+        <Ilce Adi="ALTINEKİN"/>
+        <Ilce Adi="DEREBUCAK"/>
+        <Ilce Adi="HÜYÜK"/>
+        <Ilce Adi="TAŞKENT"/>
+        <Ilce Adi="AHIRLI"/>
+        <Ilce Adi="ÇELTİK"/>
+        <Ilce Adi="DERBENT"/>
+        <Ilce Adi="GÜNEYSINIR"/>
+        <Ilce Adi="EMİRGAZİ"/>
+        <Ilce Adi="HALKAPINAR"/>
+        <Ilce Adi="TUZLUKÇU"/>
+        <Ilce Adi="YALIHÜYÜK"/>
+    </Il>
+    <Il PlakaKodu="43" Adi="KÜTAHYA">
+        <Ilce Adi="KÜTAHYA MERKEZ"/>
+        <Ilce Adi="ALTINTAŞ"/>
+        <Ilce Adi="DOMANİÇ"/>
+        <Ilce Adi="EMET"/>
+        <Ilce Adi="GEDİZ"/>
+        <Ilce Adi="SİMAV"/>
+        <Ilce Adi="TAVŞANLI"/>
+        <Ilce Adi="ASLANAPA"/>
+        <Ilce Adi="HİSARCIK"/>
+        <Ilce Adi="ŞAPHANE"/>
+        <Ilce Adi="DUMLUPINAR"/>
+        <Ilce Adi="ÇAVDARHİSAR"/>
+        <Ilce Adi="PAZARLAR"/>
+    </Il>
+    <Il PlakaKodu="44" Adi="MALATYA">
+        <Ilce Adi="MALATYA MERKEZ"/>
+        <Ilce Adi="AKÇADAĞ"/>
+        <Ilce Adi="ARAPKİR"/>
+        <Ilce Adi="ARGUVAN"/>
+        <Ilce Adi="DARENDE"/>
+        <Ilce Adi="DOĞANŞEHİR"/>
+        <Ilce Adi="HEKİMHAN"/>
+        <Ilce Adi="PÜTÜRGE"/>
+        <Ilce Adi="YEŞİLYURT"/>
+        <Ilce Adi="FIRAT"/>
+        <Ilce Adi="BATTALGAZİ"/>
+        <Ilce Adi="DOĞANYOL"/>
+        <Ilce Adi="KALE"/>
+        <Ilce Adi="KULUNCAK"/>
+        <Ilce Adi="YAZIHAN"/>
+    </Il>
+    <Il PlakaKodu="45" Adi="MANİSA">
+        <Ilce Adi="MANİSA MERKEZ"/>
+        <Ilce Adi="AKHİSAR"/>
+        <Ilce Adi="ALAŞEHİR"/>
+        <Ilce Adi="DEMİRCİ"/>
+        <Ilce Adi="GÖRDES"/>
+        <Ilce Adi="KIRKAĞAÇ"/>
+        <Ilce Adi="KULA"/>
+        <Ilce Adi="SALİHLİ"/>
+        <Ilce Adi="SARIGÖL"/>
+        <Ilce Adi="SARUHANLI"/>
+        <Ilce Adi="SELENDİ"/>
+        <Ilce Adi="SOMA"/>
+        <Ilce Adi="TURGUTLU"/>
+        <Ilce Adi="AHMETLİ"/>
+        <Ilce Adi="GÖLMARMARA"/>
+        <Ilce Adi="KÖPRÜBAŞI"/>
+    </Il>
+    <Il PlakaKodu="46" Adi="K.MARAŞ">
+        <Ilce Adi="K.MARAŞ MERKEZ"/>
+        <Ilce Adi="AFŞİN"/>
+        <Ilce Adi="ANDIRIN"/>
+        <Ilce Adi="ELBİSTAN"/>
+        <Ilce Adi="GÖKSUN"/>
+        <Ilce Adi="PAZARCIK"/>
+        <Ilce Adi="TÜRKOĞLU"/>
+        <Ilce Adi="Ç.CERİT"/>
+        <Ilce Adi="EKİNÖZÜ"/>
+        <Ilce Adi="NURHAK"/>
+    </Il>
+    <Il PlakaKodu="47" Adi="MARDİN">
+        <Ilce Adi="MARDİN MERKEZ"/>
+        <Ilce Adi="DERİK"/>
+        <Ilce Adi="KIZILTEPE"/>
+        <Ilce Adi="MAZIDAĞI"/>
+        <Ilce Adi="MİDYAT"/>
+        <Ilce Adi="NUSAYBİN"/>
+        <Ilce Adi="ÖMERLİ"/>
+        <Ilce Adi="SAVUR"/>
+        <Ilce Adi="DARGEÇİT"/>
+        <Ilce Adi="YEŞİLLİ"/>
+    </Il>
+    <Il PlakaKodu="48" Adi="MUĞLA">
+        <Ilce Adi="MUĞLA MERKEZ"/>
+        <Ilce Adi="BODRUM"/>
+        <Ilce Adi="DATÇA"/>
+        <Ilce Adi="FETHİYE"/>
+        <Ilce Adi="KÖYCEĞİZ"/>
+        <Ilce Adi="MARMARİS"/>
+        <Ilce Adi="MİLAS"/>
+        <Ilce Adi="YATAĞAN"/>
+        <Ilce Adi="ULA"/>
+        <Ilce Adi="DALAMAN"/>
+        <Ilce Adi="ORTACA"/>
+        <Ilce Adi="KAVAKLIDERE"/>
+    </Il>
+    <Il PlakaKodu="49" Adi="MUŞ">
+        <Ilce Adi="MUŞ MERKEZ"/>
+        <Ilce Adi="BULANIK"/>
+        <Ilce Adi="MALAZGİRT"/>
+        <Ilce Adi="VARTO"/>
+        <Ilce Adi="HASKÖY"/>
+        <Ilce Adi="KORKUT"/>
+    </Il>
+    <Il PlakaKodu="50" Adi="NEVŞEHİR">
+        <Ilce Adi="NEVŞEHİR MERKEZ"/>
+        <Ilce Adi="AVANOS"/>
+        <Ilce Adi="DERİNKUYU"/>
+        <Ilce Adi="GÜLŞEHİR"/>
+        <Ilce Adi="HACIBEKTAŞ"/>
+        <Ilce Adi="KOZAKLI"/>
+        <Ilce Adi="ÜRGÜP"/>
+        <Ilce Adi="ACIGÖL"/>
+    </Il>
+    <Il PlakaKodu="51" Adi="NİĞDE">
+        <Ilce Adi="NİĞDE MERKEZ"/>
+        <Ilce Adi="BOR"/>
+        <Ilce Adi="ÇAMARDI"/>
+        <Ilce Adi="ULUKIŞLA"/>
+        <Ilce Adi="ALTUNHİSAR"/>
+        <Ilce Adi="ÇİFTLİK"/>
+    </Il>
+    <Il PlakaKodu="52" Adi="ORDU">
+        <Ilce Adi="ORDU MERKEZ"/>
+        <Ilce Adi="AKKUŞ"/>
+        <Ilce Adi="AYBASTI"/>
+        <Ilce Adi="FATSA"/>
+        <Ilce Adi="GÖLKÖY"/>
+        <Ilce Adi="KORGAN"/>
+        <Ilce Adi="KUMRU"/>
+        <Ilce Adi="MESUDİYE"/>
+        <Ilce Adi="PERŞEMBE"/>
+        <Ilce Adi="ULUBEY"/>
+        <Ilce Adi="ÜNYE"/>
+        <Ilce Adi="GÜLYALI"/>
+        <Ilce Adi="GÜRGENTEP"/>
+        <Ilce Adi="ÇAMAŞ"/>
+        <Ilce Adi="ÇATALPINAR"/>
+        <Ilce Adi="ÇAYBAŞI"/>
+        <Ilce Adi="KABADÜZ"/>
+        <Ilce Adi="KABATAŞ"/>
+        <Ilce Adi="İKİZCE"/>
+    </Il>
+    <Il PlakaKodu="53" Adi="RİZE">
+        <Ilce Adi="RİZE MERKEZ"/>
+        <Ilce Adi="ARDEŞEN"/>
+        <Ilce Adi="ÇAMLIHEMŞİN"/>
+        <Ilce Adi="ÇAYELİ"/>
+        <Ilce Adi="FINDIKLI"/>
+        <Ilce Adi="İKİZDERE"/>
+        <Ilce Adi="KALKANDERE"/>
+        <Ilce Adi="PAZAR"/>
+        <Ilce Adi="GÜNEYSU"/>
+        <Ilce Adi="DEREPAZARI"/>
+        <Ilce Adi="HEMŞİN"/>
+        <Ilce Adi="İYDERE"/>
+    </Il>
+    <Il PlakaKodu="54" Adi="SAKARYA">
+        <Ilce Adi="ADAPAZARI  MERK."/>
+        <Ilce Adi="AKYAZI"/>
+        <Ilce Adi="GEYVE"/>
+        <Ilce Adi="HENDEK"/>
+        <Ilce Adi="KARASU"/>
+        <Ilce Adi="KAYNARCA"/>
+        <Ilce Adi="SAPANCA"/>
+        <Ilce Adi="PAMUKOVA"/>
+        <Ilce Adi="TARAKLI"/>
+        <Ilce Adi="KOCAALİ"/>
+        <Ilce Adi="FERİZLİ"/>
+        <Ilce Adi="KARAPÜRÇEK"/>
+        <Ilce Adi="SÖĞÜTLÜ"/>
+    </Il>
+    <Il PlakaKodu="55" Adi="SAMSUN">
+        <Ilce Adi="SAMSUN MERKEZ"/>
+        <Ilce Adi="ALAÇAM"/>
+        <Ilce Adi="BAFRA"/>
+        <Ilce Adi="ÇARŞAMBA"/>
+        <Ilce Adi="HAVZA"/>
+        <Ilce Adi="KAVAK"/>
+        <Ilce Adi="LADİK"/>
+        <Ilce Adi="TERME"/>
+        <Ilce Adi="VEZİRKÖPRÜ"/>
+        <Ilce Adi="ONDOKUZMAYIS"/>
+        <Ilce Adi="SALIPAZARI"/>
+        <Ilce Adi="TEKKEKÖY"/>
+        <Ilce Adi="ASARCIK"/>
+        <Ilce Adi="AYVACIK"/>
+        <Ilce Adi="YAKAKENT"/>
+    </Il>
+    <Il PlakaKodu="56" Adi="SİİRT">
+        <Ilce Adi="SİİRT MERKEZ"/>
+        <Ilce Adi="BAYKAN"/>
+        <Ilce Adi="ERUH"/>
+        <Ilce Adi="KURTALAN"/>
+        <Ilce Adi="PERVARİ"/>
+        <Ilce Adi="ŞİRVAN"/>
+        <Ilce Adi="AYDINLAR"/>
+    </Il>
+    <Il PlakaKodu="57" Adi="SİNOP">
+        <Ilce Adi="SİNOP MERKEZ"/>
+        <Ilce Adi="AYANCIK"/>
+        <Ilce Adi="BOYABAT"/>
+        <Ilce Adi="DURAĞAN"/>
+        <Ilce Adi="ERFELEK"/>
+        <Ilce Adi="GERZE"/>
+        <Ilce Adi="TÜRKELİ"/>
+        <Ilce Adi="DİKMEN"/>
+        <Ilce Adi="SARAYDÜZÜ"/>
+    </Il>
+    <Il PlakaKodu="58" Adi="SİVAS">
+        <Ilce Adi="SİVAS MERKEZ"/>
+        <Ilce Adi="DİVRİĞİ"/>
+        <Ilce Adi="GEMEREK"/>
+        <Ilce Adi="GÜRÜN"/>
+        <Ilce Adi="HAFİK"/>
+        <Ilce Adi="İMRANLI"/>
+        <Ilce Adi="KANGAL"/>
+        <Ilce Adi="KOYULHİSAR"/>
+        <Ilce Adi="ŞARKIŞLA"/>
+        <Ilce Adi="SUŞEHRİ"/>
+        <Ilce Adi="YILDIZELİ"/>
+        <Ilce Adi="ZARA"/>
+        <Ilce Adi="AKINCILAR"/>
+        <Ilce Adi="ALTINYAYLA"/>
+        <Ilce Adi="DOĞANŞAR"/>
+        <Ilce Adi="GÖLOVA"/>
+        <Ilce Adi="ULAŞ"/>
+    </Il>
+    <Il PlakaKodu="59" Adi="TEKİRDAĞ">
+        <Ilce Adi="TEKİRDAĞ MERKEZ"/>
+        <Ilce Adi="ÇORLU"/>
+        <Ilce Adi="ÇERKEZKÖY"/>
+        <Ilce Adi="HAYRABOLU"/>
+        <Ilce Adi="MALKARA"/>
+        <Ilce Adi="MURATLI"/>
+        <Ilce Adi="SARAY"/>
+        <Ilce Adi="ŞARKÖY"/>
+        <Ilce Adi="M.EREĞLİSİ"/>
+    </Il>
+    <Il PlakaKodu="60" Adi="TOKAT">
+        <Ilce Adi="TOKAT MERKEZ"/>
+        <Ilce Adi="ALMUS"/>
+        <Ilce Adi="ARTOVA"/>
+        <Ilce Adi="ERBAA"/>
+        <Ilce Adi="NİKSAR"/>
+        <Ilce Adi="REŞADİYE"/>
+        <Ilce Adi="TURHAL"/>
+        <Ilce Adi="ZİLE"/>
+        <Ilce Adi="YEŞİLYURT"/>
+        <Ilce Adi="PAZAR"/>
+        <Ilce Adi="BAŞÇİFTLİK"/>
+        <Ilce Adi="SULUSARAY"/>
+    </Il>
+    <Il PlakaKodu="61" Adi="TRABZON">
+        <Ilce Adi="TRABZON MERKEZ"/>
+        <Ilce Adi="AKÇAABAT"/>
+        <Ilce Adi="ARAKLI"/>
+        <Ilce Adi="ARSİN"/>
+        <Ilce Adi="ÇAYKARA"/>
+        <Ilce Adi="MAÇKA"/>
+        <Ilce Adi="OF"/>
+        <Ilce Adi="SÜRMENE"/>
+        <Ilce Adi="TONYA"/>
+        <Ilce Adi="VAKFIKEBİR"/>
+        <Ilce Adi="YOMRA"/>
+        <Ilce Adi="BEŞİKDÜZÜ"/>
+        <Ilce Adi="ŞALPAZARI"/>
+        <Ilce Adi="ÇARŞIBAŞI"/>
+        <Ilce Adi="DERNEKPAZARI"/>
+        <Ilce Adi="DÜZKÖY"/>
+        <Ilce Adi="HAYRAT"/>
+        <Ilce Adi="KÖPRÜBAŞI"/>
+    </Il>
+    <Il PlakaKodu="62" Adi="TUNCELİ">
+        <Ilce Adi="TUNCELİ MERKEZ"/>
+        <Ilce Adi="ÇEMİŞGEZEK"/>
+        <Ilce Adi="HOZAT"/>
+        <Ilce Adi="MAZGİRT"/>
+        <Ilce Adi="NAZIMİYE"/>
+        <Ilce Adi="OVACIK"/>
+        <Ilce Adi="PERTEK"/>
+        <Ilce Adi="PÜLÜMÜR"/>
+    </Il>
+    <Il PlakaKodu="63" Adi="ŞANLIURFA">
+        <Ilce Adi="ŞANLIURFA MERKEZ"/>
+        <Ilce Adi="AKÇAKALE"/>
+        <Ilce Adi="BİRECİK"/>
+        <Ilce Adi="BOZOVA"/>
+        <Ilce Adi="HALFETİ"/>
+        <Ilce Adi="HİLVAN"/>
+        <Ilce Adi="SİVEREK"/>
+        <Ilce Adi="SÜRÜÇ"/>
+        <Ilce Adi="VİRANŞEHİR"/>
+        <Ilce Adi="CEYLANPINAR"/>
+        <Ilce Adi="HARRAN"/>
+    </Il>
+    <Il PlakaKodu="64" Adi="UŞAK">
+        <Ilce Adi="UŞAK MERKEZ"/>
+        <Ilce Adi="BANAZ"/>
+        <Ilce Adi="EŞME"/>
+        <Ilce Adi="KARAHALLI"/>
+        <Ilce Adi="ULUBEY"/>
+        <Ilce Adi="SİVASLI"/>
+    </Il>
+    <Il PlakaKodu="65" Adi="VAN">
+        <Ilce Adi="VAN MERKEZ"/>
+        <Ilce Adi="BAŞKALE"/>
+        <Ilce Adi="ÇATAK"/>
+        <Ilce Adi="ERCİŞ"/>
+        <Ilce Adi="GEVAŞ"/>
+        <Ilce Adi="GÜRPINAR"/>
+        <Ilce Adi="MURADİYE"/>
+        <Ilce Adi="ÖZALP"/>
+        <Ilce Adi="BAHÇESARAY"/>
+        <Ilce Adi="ÇALDIRAN"/>
+        <Ilce Adi="EDREMİT"/>
+        <Ilce Adi="SARAY"/>
+    </Il>
+    <Il PlakaKodu="66" Adi="YOZGAT">
+        <Ilce Adi="YOZGAT MERKEZ"/>
+        <Ilce Adi="AKDAĞMADENİ"/>
+        <Ilce Adi="BOĞAZLIYAN"/>
+        <Ilce Adi="ÇAYIRALAN"/>
+        <Ilce Adi="ÇEKEREK"/>
+        <Ilce Adi="SARIKAYA"/>
+        <Ilce Adi="ŞEFAATLİ"/>
+        <Ilce Adi="SORGUN"/>
+        <Ilce Adi="YERKÖY"/>
+        <Ilce Adi="AYDINCIK"/>
+        <Ilce Adi="ÇANDIR"/>
+        <Ilce Adi="KADIŞEHRİ"/>
+        <Ilce Adi="SARAYKENT"/>
+        <Ilce Adi="YENİFAKILI"/>
+    </Il>
+    <Il PlakaKodu="67" Adi="ZONGULDAK">
+        <Ilce Adi="ZONGULDAK MERK."/>
+        <Ilce Adi="DEVREK"/>
+        <Ilce Adi="ÇAYCUMA"/>
+        <Ilce Adi="EREĞLİ"/>
+        <Ilce Adi="ALAPLI"/>
+        <Ilce Adi="GÖKÇEBEY"/>
+    </Il>
+    <Il PlakaKodu="68" Adi="AKSARAY">
+        <Ilce Adi="AKSARAY MERKEZ"/>
+        <Ilce Adi="AĞAÇÖREN"/>
+        <Ilce Adi="GÜZELYURT"/>
+        <Ilce Adi="ORTAKÖY"/>
+        <Ilce Adi="SARIYAHŞİ"/>
+        <Ilce Adi="ESKİL"/>
+        <Ilce Adi="GÜLAĞAÇ"/>
+    </Il>
+    <Il PlakaKodu="69" Adi="BAYBURT">
+        <Ilce Adi="BAYBURT MERKEZ"/>
+        <Ilce Adi="AYDINTEPE"/>
+        <Ilce Adi="DEMİRÖZÜ"/>
+    </Il>
+    <Il PlakaKodu="70" Adi="KARAMAN">
+        <Ilce Adi="KARAMAN MERKEZ"/>
+        <Ilce Adi="AYRANCI"/>
+        <Ilce Adi="ERMENEK"/>
+        <Ilce Adi="K.KARABEKİR"/>
+        <Ilce Adi="BAŞYAYLA"/>
+        <Ilce Adi="SARIVELİLER"/>
+    </Il>
+    <Il PlakaKodu="71" Adi="KIRIKKALE">
+        <Ilce Adi="KIRIKKALE MERK."/>
+        <Ilce Adi="DELİCE"/>
+        <Ilce Adi="KESKİN"/>
+        <Ilce Adi="SULAKYURT"/>
+        <Ilce Adi="BAHŞILI"/>
+        <Ilce Adi="BALIŞEYH"/>
+        <Ilce Adi="ÇELEBİ"/>
+        <Ilce Adi="KARAKEÇİLİ"/>
+        <Ilce Adi="YAHŞİHAN"/>
+    </Il>
+    <Il PlakaKodu="72" Adi="BATMAN">
+        <Ilce Adi="BATMAN MERKEZ"/>
+        <Ilce Adi="BEŞİRİ"/>
+        <Ilce Adi="GERCÜŞ"/>
+        <Ilce Adi="HASANKEYF"/>
+        <Ilce Adi="KOZLUK"/>
+        <Ilce Adi="SASON"/>
+    </Il>
+    <Il PlakaKodu="73" Adi="ŞIRNAK">
+        <Ilce Adi="ŞIRNAK MERKEZ"/>
+        <Ilce Adi="BEYTÜŞŞEBAP"/>
+        <Ilce Adi="CİZRE"/>
+        <Ilce Adi="GÜÇLÜKONAK"/>
+        <Ilce Adi="İDİL"/>
+        <Ilce Adi="SİLOPİ"/>
+        <Ilce Adi="ULUDERE"/>
+    </Il>
+    <Il PlakaKodu="74" Adi="BARTIN">
+        <Ilce Adi="BARTIN MERKEZ"/>
+        <Ilce Adi="AMASRA"/>
+        <Ilce Adi="KURUCAŞİLE"/>
+        <Ilce Adi="ULUS"/>
+    </Il>
+    <Il PlakaKodu="75" Adi="ARDAHAN">
+        <Ilce Adi="ARDAHAN MERKEZ"/>
+        <Ilce Adi="ÇILDIR"/>
+        <Ilce Adi="DAMAL"/>
+        <Ilce Adi="GÖLE"/>
+        <Ilce Adi="HANAK"/>
+        <Ilce Adi="POSOF"/>
+    </Il>
+    <Il PlakaKodu="76" Adi="IĞDIR">
+        <Ilce Adi="IĞDIR MERKEZ"/>
+        <Ilce Adi="ARALIK"/>
+        <Ilce Adi="KARAKOYUNLU"/>
+        <Ilce Adi="TUZLUCA"/>
+    </Il>
+    <Il PlakaKodu="77" Adi="YALOVA">
+        <Ilce Adi="YALOVA MERKEZ"/>
+        <Ilce Adi="ALTINOVA"/>
+        <Ilce Adi="ARMUTLU"/>
+        <Ilce Adi="ÇINARCIK"/>
+        <Ilce Adi="ÇİFTLİKKÖY"/>
+        <Ilce Adi="TERMAL"/>
+    </Il>
+    <Il PlakaKodu="78" Adi="KARABÜK">
+        <Ilce Adi="KARABÜK MERKEZ"/>
+        <Ilce Adi="EFLANİ"/>
+        <Ilce Adi="ESKİPAZAR"/>
+        <Ilce Adi="OVACIK"/>
+        <Ilce Adi="SAFRANBOLU"/>
+        <Ilce Adi="YENİCE"/>
+    </Il>
+    <Il PlakaKodu="79" Adi="KİLİS">
+        <Ilce Adi="KİLİS MERKEZ"/>
+        <Ilce Adi="ELBEYLİ"/>
+        <Ilce Adi="MUSABEYLİ"/>
+        <Ilce Adi="POLATELİ"/>
+    </Il>
+    <Il PlakaKodu="80" Adi="OSMANİYE">
+        <Ilce Adi="OSMANİYE MERKEZ"/>
+        <Ilce Adi="BAHÇE"/>
+        <Ilce Adi="KADİRLİ"/>
+        <Ilce Adi="TOPRAKKALE"/>
+        <Ilce Adi="SUMBAS"/>
+        <Ilce Adi="DÜZİÇİ"/>
+        <Ilce Adi="HASANBEYLİ"/>
+    </Il>
+    <Il PlakaKodu="81" Adi="DÜZCE">
+        <Ilce Adi="DÜZCE MERKEZ"/>
+        <Ilce Adi="AKÇAKOCA"/>
+        <Ilce Adi="CUMAYERİ"/>
+        <Ilce Adi="ÇİLİMLİ"/>
+        <Ilce Adi="GÖLYAKA"/>
+        <Ilce Adi="GÜMÜŞOVA"/>
+        <Ilce Adi="KAYNAŞLI"/>
+        <Ilce Adi="YIĞILCA"/>
+    </Il>
+</Iller>

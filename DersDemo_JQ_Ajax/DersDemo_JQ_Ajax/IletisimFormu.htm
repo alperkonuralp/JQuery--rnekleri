@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>İletişim Formu</title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#f1").submit(function() {
+                var veri = new Object();
+                veri.tbAd = $("#tbAd").val();
+                veri.tbSoyad = $("#tbSoyad").val();
+                veri.tbTelefon = $("#tbTelefon").val();
+                veri.tbEPosta = $("#tbEPosta").val();
+                veri.tbKonu = $("#tbKonu").val();
+                veri.tbMesaj = $("#tbMesaj").val();
+
+                $.get("SendMail.ashx", veri,
+                    function(data, status) {
+                        if (data == 'ok') {
+                            alert("Mesajınız İletilmiştir. " +
+                                "Katılımınız için teşekkür ederiz.");
+
+                        }
+                        else {
+                            alert("Mesajınız iletilemedi. " +
+                                "Lütfen tekrar deneyiniz.");
+                        }
+                    }, 'text');
+
+                return false;
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <form id="f1" action="#" method="get">
+    <table>
+        <tr>
+            <td align="right">
+                Adınız
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input type="text" id="tbAd" name="tbAd" maxlength="15" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Soyadınız
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input type="text" id="tbSoyad" name="tbSoyad" maxlength="15" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Telefon
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input type="text" id="tbTelefon" name="tbTelefon" maxlength="15" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                E-Posta
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input type="text" id="tbEPosta" name="tbEPosta" maxlength="75" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Konu
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input type="text" id="tbKonu" name="tbKonu" maxlength="150" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Mesaj
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <textarea id="tbMesaj" name="tbMesaj"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input type="submit" id="bGonder" name="bGonder" value="Gönder" />
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

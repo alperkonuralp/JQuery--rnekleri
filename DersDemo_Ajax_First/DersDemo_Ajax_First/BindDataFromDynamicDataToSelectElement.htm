@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Dinamik Verilerin Okuyup select elemanına doldurmak.</title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+        
+        
+        
+        
+            $.get("data.ashx", { t: 'categories' },
+                function(data) {
+                    $('Categories', data).each(function(i, item) {
+                        $('<option/>').html($(item).children("CategoryName").text())
+                            .val($(item).children("CategoryID").text())
+                            .appendTo('#ulCategories');
+                    });
+                    $('#ulCategories').prepend('<option value=0>Kategori Seçiniz.</option>').val(0);
+                }, 'xml');
+
+        
+        
+        
+            $('#ulCategories').change(function() {
+                var id = $('#ulCategories').val();
+                $("#dDetails").empty();
+                if (id != 0)
+                    $.get('data.ashx', { t: 'categories', id: id },
+                    function(data) {
+                        $("#dDetails")
+                            .append("Category ID = " + $('CategoryID', data).text())
+                            .append("<br/>Category Name = " + $('CategoryName', data).text())
+                            .append("<br/>Description = " + $('Description', data).text());
+                    }, 'xml');
+
+
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+    Kategoriler :
+    <select id="ulCategories">
+    </select>
+    <div id="dDetails">
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() { // dom tam olarak yüklendikten sonra işlem yapmak için bu fonksiyonu yazıyoruz.
+            $("#ddl").change(function() { // ID'si ddl olan select elemanında başka bir eleman seçilirse tetiklenecek olayı yazıyoruz.
+                $("#d").html($(this).val()); // ID'si d olan elemanın içine olayın tetiklendiği elemanda seçilen değeri yazdırıyoruz.
+            });
+            $("#ddl2").change(function() {
+                $("#d").html("Value : " + $(this).val() +
+                //" , Text : " + $("#ddl2 option[value="+$(this).val()+"]").html()
+                    " , Text : " + $("#ddl2 option:selected").html()
+                );
+            });
+
+            for (var i = 0; i <= 100; i++) {
+                $("<option/>").html(i)
+                              .appendTo("#ddlNumber1");
+                $("<option/>").html(i).appendTo("#ddlNumber2");
+            }
+        });
+    </script>
+
+</head>
+<body>
+    <select id="ddl">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+    <div id="d">
+    </div>
+    <select id="ddl2">
+        <option value="10">İzmir</option>
+        <option value="20">İstanbul</option>
+        <option value="30">Ankara</option>
+        <option value="40">Antalya</option>
+        <option value="50">Bursa</option>
+    </select>
+    <br />
+    <br />
+    <br />
+    <div>
+        <select id="ddlNumber1">
+        </select>
+        +
+        <select id="ddlNumber2">
+        </select>
+        = <span id="sNumber3"></span>
+    </div>
+</body>
+</html>

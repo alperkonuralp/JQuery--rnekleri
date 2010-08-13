@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Urunler>
+    <Urun UrunKodu="A01">
+        <UrunAdi>Kalem</UrunAdi>
+        <BirimFiyati>0.75</BirimFiyati>
+        <StokMiktari>250</StokMiktari>
+        <Resim>http://www.webdersleri.com/dijital-resim/pstutorial/yarisma/images/kalem-atakane.jpg</Resim>
+        <Html><![CDATA[<img href=""/>]]></Html>
+    </Urun>
+    <Urun UrunKodu="A02">
+        <UrunAdi>Silgi</UrunAdi>
+        <BirimFiyati>0.50</BirimFiyati>
+        <StokMiktari>350</StokMiktari>
+        <Resim>http://img237.imageshack.us/img237/8408/800pxpelikanradiergummiiz3.jpg</Resim>
+    </Urun>
+    <Urun UrunKodu="B01">
+        <UrunAdi>TShirt</UrunAdi>
+        <BirimFiyati>29.90</BirimFiyati>
+        <StokMiktari>100</StokMiktari>
+        <Resim>http://www.10marifet.org/imaj/Kapkaracamdankelebek/t-shirt18.jpg</Resim>
+    </Urun>
+    <Urun UrunKodu="B02">
+        <UrunAdi>Kot Pantalon</UrunAdi>
+        <BirimFiyati>59.90</BirimFiyati>
+        <StokMiktari>50</StokMiktari>
+        <Resim>http://www.pantolonmodelleri.com/data/media/3/kot_pantolonlar5.jpg</Resim>
+    </Urun>
+    <Urun UrunKodu="C01">
+        <UrunAdi>Cam Bardak</UrunAdi>
+        <BirimFiyati>2.90</BirimFiyati>
+        <StokMiktari>600</StokMiktari>
+        <Resim>http://www.aksamustu.net/wp-content/bardak.jpg</Resim>
+    </Urun>
+    <Urun UrunKodu="C02">
+        <UrunAdi>Cam Sürahi</UrunAdi>
+        <BirimFiyati>39.90</BirimFiyati>
+        <StokMiktari>150</StokMiktari>
+        <Resim>http://www.tabakkiralama.com/cam_surahi.jpg</Resim>
+    </Urun>
+    <Urun UrunKodu="D01">
+        <UrunAdi>PS3</UrunAdi>
+        <BirimFiyati>709</BirimFiyati>
+        <StokMiktari>25</StokMiktari>
+        <Resim>http://img118.imageshack.us/img118/1615/ps37ez4.jpg</Resim>
+    </Urun>
+    <Urun UrunKodu="D02">
+        <UrunAdi>PSP</UrunAdi>
+        <BirimFiyati>349</BirimFiyati>
+        <StokMiktari>30</StokMiktari>
+        <Resim>http://www.teknokampus.com/upload/resimler/psp_slim.jpg</Resim>
+    </Urun>
+    <Urun UrunKodu="D03">
+        <UrunAdi>Led TV</UrunAdi>
+        <BirimFiyati>9000</BirimFiyati>
+        <StokMiktari>10</StokMiktari>
+        <Resim>http://img33.imageshack.us/img33/7514/samsungledlcdtv1.jpg</Resim>
+    </Urun>
+    <Urun UrunKodu="D04">
+        <UrunAdi>Laptop</UrunAdi>
+        <BirimFiyati>2490</BirimFiyati>
+        <StokMiktari>15</StokMiktari>
+        <Resim>http://www.teknik-bilim.com/wp-content/uploads/2009/10/laptop.jpg</Resim>
+    </Urun>
+</Urunler>
