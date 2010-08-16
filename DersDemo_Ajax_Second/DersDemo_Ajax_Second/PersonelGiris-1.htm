@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#f1").submit(function() {
+                var veri = $('#f1').serialize();
+
+                $.get('personelGiris.ashx?' + veri,
+                    function(data, status) {
+                        alert(data);
+                    }, 'text');
+                return false;
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <form id="f1">
+    <table>
+        <tr>
+            <td align="right">
+                Personel Kodu
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input type="text" id="pk" name="pk" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Personel Adı
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input type="text" id="pa" name="pa" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input type="submit" id="bGonder" name="bGonder" value='Gönder' />
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

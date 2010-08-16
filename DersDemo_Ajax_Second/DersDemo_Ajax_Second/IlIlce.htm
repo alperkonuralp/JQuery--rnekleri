@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            var sets = new Object();
+            sets.url = 'IlIlce.xml'; // hangi dosyayı istediğimize söyler
+            sets.type = 'GET'; // isteğin sunucuya nasıl ulaşacağını söyler.
+            sets.dataType = 'xml'; // geri dönecek bilginin tipi
+            sets.success = function(data, status) { alert('Success : ' + data); };
+            sets.error = function(xhr, textStatus, errorThrown) {
+                alert('Error : ' + textStatus);
+            };
+            //sets.data = {pk: '123'};
+            sets.beforeSend = function() {
+                $('#dMesaj').show();
+            };
+            sets.complete = function() {
+                $('#dMesaj').hide();
+            }
+
+            $.ajax(sets);
+        });
+    </script>
+
+</head>
+<body>
+    <div id="dMesaj" style='color: White; background: Blue; display: none'>
+    </div>
+</body>
+</html>

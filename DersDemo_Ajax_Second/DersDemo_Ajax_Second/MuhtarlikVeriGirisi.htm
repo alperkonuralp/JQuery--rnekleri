@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="jquery.datepick.css" rel="stylesheet" type="text/css" />
+
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script src="jquery.datepick.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            window.changeElement = true;
+            $("#tbTCKimlikNo").keypress(function(evt) {
+                //var ch = String.fromCharCode(evt.keyCode); // sadece ie'de çalışıyor.
+                var ch = String.fromCharCode(evt.which);
+                if ((ch < '0' || ch > '9') && evt.which != 8) {
+                    return false;
+                }
+            })
+            .blur(TCKimlikNoValidate);
+            $("#tbAd, #tbSoyad, #tbBabaAdi, #tbAnaAdi, #tbDogumYeri")
+            .blur(FieldValidate);
+
+            $("#tbDogumTarihi").datepick({ yearRange: '1900:+0' });
+
+
+            $("#f1").submit(function() {
+                if (!TCKimlikNoValidate()) {
+                    return false;
+                }
+                if (!AdValidate()) {
+                    return false;
+                }
+
+                return true;
+            });
+        });
+        function TCKimlikNoValidate() {
+            var val = $("#tbTCKimlikNo").val();
+            if (val.length != 11) {
+                alert("Lütfen geçerli bir T.C. kimlik numarası giriniz.");
+                $("#tbTCKimlikNo").focus();
+                return false;
+            }
+            return true;
+        }
+
+        function AdValidate() {
+            var val = $("#tbAd").val();
+            if (val.length < 2) {
+                alert("Lütfen geçerli bir ad giriniz.");
+                $("#tbAd").focus();
+                return false;
+            }
+            return true;
+        }
+
+        function FieldValidate() {
+            if (!window.changeElement) { window.changeElement = true; return true };
+            var val = $(this).val();
+            if (val.length < 2) {
+                var msg = $(this).attr('errormessage');
+                if (!msg)
+                    msg = "Lütfen geçerli bir değer giriniz.";
+
+                alert(msg);
+                window.changeElement = false;
+                $(this).focus();
+                return false;
+            }
+            return true;
+        }
+
+        function SoyadValidate() {
+            var val = $("#tbSoyad").val();
+            if (val.length < 2) {
+                alert("Lütfen geçerli bir soyad giriniz.");
+                $("#tbSoyad").focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+</head>
+<body>
+    <form id="f1" method="get" action="MuhtarlikVeriGirisi.htm">
+    <table>
+        <tr>
+            <td colspan="3" align="center">
+                Kişi Tanımlama
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                T.C. Kimlik No
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbTCKimlikNo" type="text" name="tbTCKimlikNo" maxlength="11" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Ad
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbAd" name="tbAd" type="text" errormessage="Lütfen geçerli bir ad giriniz." />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Soyad
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbSoyad" name="tbSoyad" type="text" errormessage="Lütfen geçerli bir soyad giriniz." />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Cinsiyet
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <label>
+                    <input id="rbCinsiyetErkek" checked="checked" name="rbCinsiyet" type="radio" value="Erkek" />
+                    Erkek</label>&nbsp;
+                <label>
+                    <input id="rbCinsiyetKadin" name="rbCinsiyet" type="radio" value="Kadın" />Kadın</label>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Baba Adı
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbBabaAdi" name="tbBabaAdi" type="text" errormessage="Lütfen geçerli bir baba adı giriniz." />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Ana Adı
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbAnaAdi" name="tbAnaAdi" type="text" errormessage="Lütfen geçerli bir ana adı giriniz." />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Doğum Yeri
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbDogumYeri" name="tbDogumYeri" type="text" errormessage="Lütfen geçerli bir doğum yeri giriniz." />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Doğum Tarihi
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbDogumTarihi" name="tbDogumTarihi" type="text" readonly="readonly" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Kan Grubu
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <select id="ddlKanGrubu" name="ddlKanGrubu">
+                    <option value='-'>Bilinmiyor</option>
+                    <option>0 RH+</option>
+                    <option>0 RH-</option>
+                    <option>A RH+</option>
+                    <option>A RH-</option>
+                    <option>B RH+</option>
+                    <option>B RH-</option>
+                    <option>AB RH+</option>
+                    <option>AB RH-</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Medeni Durumu
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <label>
+                    <input type="radio" id="rbMedeniDurumuBekar" name="rbMedeniDurumu" value="Bekar"
+                        checked="checked" />Bekar
+                </label>
+                &nbsp;
+                <label>
+                    <input type="radio" id="rbMedeniDurumuEvli" name="rbMedeniDurumu" value="Evli" />Evli
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Nüfusa Kayıtlı Olduğu
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                İl
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <select id="ddlIl" name="ddlIl">
+                    <option></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                İlçe
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <select id="ddlIlce" name="ddlIlce">
+                    <option></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Mahalle/Köy
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbMahalleKoy" name="tbMahalleKoy" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Cilt No
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbCiltNo" name="tbCiltNo" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Aile Sıra No
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbAileSiraNo" name="tbAileSiraNo" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Sıra No
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbSiraNo" name="tbSiraNo" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                İkametgah Adresi
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Mahalle
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbMahalle" name="tbMahalle" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Cadde
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbCadde" name="tbCadde" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Sokak
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbSokak" name="tbSokak" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Apt. Kapı No
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbAptKapiNo" name="tbAptKapiNo" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Apt. Adı
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbAptAdi" name="tbAptAdi" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Kat
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <select id="ddlKat" name="ddlKat">
+                    <option></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Daire No
+            </td>
+            <td align="center">
+                :
+            </td>
+            <td align="left">
+                <input id="tbDaireNo" name="tbDaireNo" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input id="bKaydet" name="bKaydet" type="submit" value="Kaydet" />
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
